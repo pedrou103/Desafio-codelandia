@@ -1,17 +1,17 @@
-@media (max-width: 420px) {
+@media (max-width: 900px) {
     .header {
         height: 200px;
     }
     
     .row-first {
-        width: 90%;
+        width: 85%;
         font-size: 18px;
         line-height: 22.5px;
         margin-top: 48px;
     }
     
     #input {
-        width: 90%;
+        width: 85%;
         height: 40px;
         margin-top: 41px;
         padding-left: 9.19px;
@@ -30,10 +30,22 @@
     .content {
         padding-top: 25px;
         margin-bottom: 50px;
+        height: 100%;
     }
 
     .news {
-        width: 90%;
-        
+        width: 80%;
+        padding: 16px;
+    }
+
+    .title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    article {
+        margin-top: 9px;
+        font-size: 14px;
+        line-height: 26px;
     }
 }
