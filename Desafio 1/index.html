@@ -8,21 +8,57 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsivo.css">
     <link rel="stylesheet" href="./css/reset.css">
 </head>
 <body>
     <div class="cantainer">
         <div class="header">
             <div class="row-first">
-                <h5>Codelândia</h5>
-                <h5>blog</h5>
+                <div>Codelândia</div>
+                <div>blog</div>
             </div>
-            <div class="secondary">
-                <img src="./img/Vector.png">
-                <h5>Pesquisar no blog</h5>
+
+            <div id="input">
+                <input class="secondary" type="text" placeholder="Pesquisar no blog">
+                <span><img id="search" src="./img/Vector.png"></span>
             </div>
         </div>
-        <div class="content"></div>
+
+        <div class="content">
+            <div class="news">
+                <div class="news-first">
+                    <div class="data">02 de jul, 2021</div>
+                    <img src="./img/coracao.png" alt="favoritar">
+                </div>
+                <div class="title">Agora é oficial: o Windows 11 está vindo</div>
+                <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.s</article>
+            </div>
+            <div class="news">
+                <div class="news-first">
+                    <div class="data">02 de jul, 2021</div>
+                    <img src="./img/coracao.png" alt="favoritar">
+                </div>
+                <div class="title">Tim Berners-Lee vai leiloar código-fonte da web</div>
+                <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Praesent et auctor justo. Vestibulum nisl orci, lacinia venenatis leo sit amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus a lectus et, interdum ullamcorper libero.</article>
+            </div>
+            <div class="news">
+                <div class="news-first">
+                    <div class="data">02 de jul, 2021</div>
+                    <img src="./img/coracao.png" alt="favoritar">
+                </div>
+                <div class="title">Tem Firefox novo no pedaço e você vai querer migrar</div>
+                <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est.</article>
+            </div>
+            <div class="news">
+                <div class="news-first">
+                    <div class="data">02 de jul, 2021</div>
+                    <img src="./img/coracao.png" alt="favoritar">
+                </div>
+                <div class="title">John McAfee, criador do antivírus McAfee, morre</div>
+                <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Praesent et auctor justo. Vestibulum nisl orci, lacinia venenatis leo sit amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus a lectus et, interdum ullamcorper libero.</article>
+            </div>
+        </div>
     </div>
 </body>
 </html>

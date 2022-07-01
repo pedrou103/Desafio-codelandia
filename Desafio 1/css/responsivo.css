@@ -1,0 +1,39 @@
+@media (max-width: 420px) {
+    .header {
+        height: 200px;
+    }
+    
+    .row-first {
+        width: 90%;
+        font-size: 18px;
+        line-height: 22.5px;
+        margin-top: 48px;
+    }
+    
+    #input {
+        width: 90%;
+        height: 40px;
+        margin-top: 41px;
+        padding-left: 9.19px;
+    }
+
+    #search {
+        width: 15.63px;
+    }
+
+    .secondary {
+        margin-left: 9.19px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .content {
+        padding-top: 25px;
+        margin-bottom: 50px;
+    }
+
+    .news {
+        width: 90%;
+        
+    }
+}

@@ -1,14 +1,22 @@
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lexend+Deca&display=swap);
 
+.container {
+    display: grid;
+    grid-template-areas: 'header'
+        'content';
+    width: 100%;
+    height: 100%;
+}
+
 .header {
-    background: linear-gradient(85.27deg, #574AEB
-       0%, #3EA1DB 100%);
+    grid-area: header;
+    background: linear-gradient(88.27deg, #574AEB 0%, #3EA1DB 100%);
+    font-family: 'Lexend Deca', sans-serif;
     width: 100%;
     height: 250px;
-    font-family: 'Lexend Deca', sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: column;
     align-items: center;
 }
 
@@ -16,22 +24,103 @@
     width: 900px;
     line-height: 30px;
     font-size: 24px;
-    font-style:normal;
-    top: 41px;
-    /* margin-bottom: 73px; */
-    color:rgba(255, 255, 255, 1);
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 41px;
+    color: rgba(255, 255, 255, 1);
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.secondary {
+#input {
     width: 900px;
     height: 65px;
-    background-color: rgba(255, 255, 255, 0.2) ;
+    margin-top: 73px;
     border-radius: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 0;
+    padding-left: 20.28px;
+}
+
+.secondary {
+    margin-left: 20.28px;
+    width: 840px;
+    line-height: 22px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    background-color: transparent;
     font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    border: transparent;
+}
+
+.secondary::placeholder {
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+.secondary:focus{
+    outline-style: none;
+}
+
+.content {
+    grid-area: content;
+    background-color: #f3f5f7;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.news {
+    width: 900px;
+    margin-top: 50px;
+    height: auto;
+    /* margin: 25px; */
+    padding: 25px;
+    background-color: #ffffff;
+    font-family: 'Lexend Deca', sans-serif;
+    box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
+    border-radius: 5px;
+}
+
+.news-first {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.data {
+    color: #717171;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+.title {
+    margin-top: 22px;
+    color: #1A202C;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+}
+
+article {
+    margin-top: 8px;
+    color: #717171;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
 }
