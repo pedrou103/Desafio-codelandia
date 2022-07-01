@@ -1,0 +1,11 @@
+@media (max-width: 420px) {
+    .destaque > #title {
+        font-size: 28px;
+        line-height: 55px;
+    }
+
+    .destaque > #subtitle {
+        font-size: 16px;
+        line-height: 29px;
+    }
+}
