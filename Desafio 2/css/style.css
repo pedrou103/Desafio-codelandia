@@ -13,7 +13,7 @@
     height: 60px;
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-weight: 500;
@@ -32,6 +32,7 @@
     height: auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -47,35 +48,31 @@
 }
 
 .imgback {
-    /* background-image: url(../img/imageback-desktop.png); */
+    background:rgba(0,0,0,.7) url(../img/imageback-desktop.png);
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.6;
-    height: 377px;
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 378px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-/* img {
-    opacity: .6;
-    width: 100%;
-    height: 377px;
-} */
-
 .imgback > .title {
-    margin-left: 15%;
+    /* margin-left: 15%; */
+    margin-left: 100px;
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
     color: #F9F9F9;
-    opacity: 1;
 }
 
 .imgback > .subtitle {
     margin-top: 19px;
-    margin-left: 15%;
+    margin-left: 100px;
+    /* margin-left: 15%; */
     font-weight: 600;
     font-size: 18px;
     line-height: 35px;
@@ -102,6 +99,7 @@
     font-size: 18px;
     line-height: 35px;
     margin-bottom: 13.5px;
+    text-align: center;
 }
 
 .destaque > .cards {
@@ -114,7 +112,7 @@
 
 .destaque > .cards > .card {
     background-color: #EBE9EA;
-    padding: 76px 25px;
+    padding: 76px 0 0 25px;
     display: flex;
     justify-content: center;
     align-self: center;

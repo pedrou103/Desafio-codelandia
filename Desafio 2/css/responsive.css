@@ -1,4 +1,32 @@
-@media (max-width: 420px) {
+@media (max-width: 900px) {
+
+    .imgback {
+        background: rgba(0, 0, 0, .7) url(../img/image_center.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: multiply;
+        height: 377px;
+        width: 100%;
+    }
+    
+    .imgback > .title {
+        margin-left: 20px;
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .imgback > .subtitle {
+        margin-left: 20px;
+        font-size: 16px;
+        line-height: 29px;
+        margin-bottom: 44px;
+    }
+
+    .destaque {
+        margin-top: 50px;
+    }
+
     .destaque > #title {
         font-size: 28px;
         line-height: 55px;
@@ -7,5 +35,18 @@
     .destaque > #subtitle {
         font-size: 16px;
         line-height: 29px;
+    }
+
+    .destaque > .cards {
+        margin-top: 0;
+    }
+
+    .destaque > .cards > .card {
+        padding: 76px 62px;
+        margin: 15px 0 0 15px;
+    }
+
+    .footer {
+        margin-top: 35px;
     }
 }
