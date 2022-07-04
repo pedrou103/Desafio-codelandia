@@ -1,0 +1,32 @@
+body {
+/* variables font */
+--font-title: 'Merriweather', serif;
+--font-subtitle: 'Lato', sans-serif;
+
+/* variables colors */
+--button: #6C63FF;
+}
+
+.one {
+    background-color: #FF6363;
+}
+
+.two {
+    background-color: #63ECFF;
+}
+
+.three {
+    background-color: #F363FF;
+}
+
+.four {
+    background-color: #63FF73;
+}
+
+.five {
+    background-color: #FFDD63;
+}
+
+.six {
+    background-color: #6663FF;
+}
