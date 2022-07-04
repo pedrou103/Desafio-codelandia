@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.image {
+    width: 50%;
+    height: 100vh;
+    background-color: #F7FAFC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.login > div {
+    width: 50%;
+    margin-bottom: 28px;
+}
+
+.login div p:nth-child(1),
+.login div p:nth-child(2) {
+    font-family: 'Merriweather', serif !important;
+    color: #1A202C;
+}
+
+.login div p:nth-child(1) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.login div p:nth-child(2) {
+    margin-top: 7px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 33px;
+}
+
+.login > form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 11px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+form > input {
+    border: 1px solid rgba(232, 232, 232, 1);
+    border-radius: 5px;
+    padding-top: 17px;
+    padding-left: 20px;
+    padding-bottom: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+input::placeholder {
+    color: #1A202C;
+    align-items: center;
+}
+
+input:focus {
+    outline-style: none;
+}
+
+form>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 0 26px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+form>div>label>input,
+form>button>img {
+    margin-right: 11px;
+}
+
+form button:nth-child(6),
+form button:nth-child(7) {
+    padding: 15px 0 16px 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    border: 0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+form button:nth-child(6) {
+    background-color: #04C45C;
+    justify-content: center;
+    align-items: center;
+}
+
+form button:nth-child(7) {
+    margin-top: 15px;
+    background-color: #1A202C;
+    justify-content: center;
+    align-items: center;
+}
+
+.login p:nth-child(3) {
+    position: absolute;
+    bottom: 50px;
+    color: #1A202C;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+a {
+    text-decoration: none;
+    color: #2b6cb0;
+}
+
+a:visited {
+    color: #2b6cb0;
+}

@@ -1,0 +1,28 @@
+@media (max-width: 500px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .login {
+        width: 100%;
+    }
+
+    .login > div {
+        margin-left: 32px;
+        width: 95%;
+    }
+
+    .login > form {
+        width: 90%;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    .login p:nth-child(3) {
+        bottom: 52px;
+    }
+}
