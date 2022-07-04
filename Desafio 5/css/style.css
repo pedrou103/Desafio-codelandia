@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+
+.container {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(130.02deg, #628E75 0.66%, #1A4855 83.32%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logos {
+    margin-top: 41px;
+    width: calc(100vw - 350px);
+    display: flex;
+    /* background-color: chocolate; */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logos > div:nth-child(2) > img {
+    margin-left: 31px;  
+}
+
+.content {
+    /* margin-top: 165px; */
+    width: calc(100vw - 350px);
+    height: 414px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #f9f9f9;
+}
+
+.info {
+    margin-top: 75.89px;
+    left: 0;
+}
+
+.content > .image {
+    margin-top: 45px;
+    margin-left: 165px;
+    width: auto;
+    height: auto;
+}
+
+.content > .image > img {
+    width: 100%;
+    height: auto;
+}
+
+.info p:nth-child(1) {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+}
+
+.info p:nth-child(2) {
+    margin-top: 14px;
+    width: 445px;
+    font-weight: 900;
+    font-size: 68px;
+    line-height: 74px;
+    letter-spacing: 0.01em;
+}
+
+.info p:nth-child(3) {
+    margin-top: 25px;
+    width: 445px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+}
+
+.actions {
+    margin-top: 46px;
+    display: flex;
+    flex-direction: row;
+}
+
+.actions div:nth-child(1){
+    width: 225px;
+    height: 45px;
+    background-color: #658E76;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actions div:nth-child(1) > img {
+    margin-right: 14px;
+}
+
+.actions div:nth-child(2){
+    width: 225px;
+    height: 45px;
+    border: 2px solid #658E76;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
