@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap');
 
-.content {
+.container {
     width: 100vw;
     height: 100vh;
     display: flex;
