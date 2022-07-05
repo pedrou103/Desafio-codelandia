@@ -65,7 +65,6 @@ body {
 }
 
 .content div:nth-child(2) .details {
-    /* background-color: blue; */
     margin-top: 42.33px;
     margin-left: 0;
     height: 40px;
@@ -99,7 +98,6 @@ body {
 } */
 
 .content div:nth-child(2) .details .stars {
-    /* background-color: antiquewhite; */
     width: auto;
     display: flex;
     flex-direction: row;
@@ -117,10 +115,23 @@ body {
     margin-top: 40px;
 }
 
+.actions button:nth-child(1) {
+    background-color: #0072D2;
+    border: 0;
+    margin-right: 21px;
+}
+
+.actions button:nth-child(2) {
+    background-color: #131318;
+    border: 1px solid #FFFFFF;
+}
+
 button {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
     padding: 15px 27px;
+    border-radius: 3px;
+    color: #ffffff;
 }

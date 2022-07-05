@@ -1,0 +1,39 @@
+@media (max-width: 500px) {
+
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .container p:nth-child(1) {
+        margin-top: 60px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .container p:nth-child(2) {
+        margin-top: 32px;
+        font-size: 64px;
+        line-height: 78px;
+    }
+
+    .content {
+        margin-top: 298px;
+    }
+
+    .content div:nth-child(1) {
+        display: none;
+    }
+
+    .content div:nth-child(2) {
+        background-color: #19191F;
+    }
+
+    .content div:nth-child(2) p {
+    }
+}
