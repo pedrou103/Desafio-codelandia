@@ -20,19 +20,14 @@
         display: none;
     }
 
-    .personagem {
-        width: 132.86px;
-        background: url(../img/stroke.png);
-        position: absolute;
-    }
-
     .personas > p {
         display: none;
     }
 
-    .personagem > img {
-        position: relative;
-        top: 6.25px;
-        left: 6.25px;
+    .content > .personas > .icon {
+        position: absolute;
+        align-items: center;
+        bottom: 32px;
     }
+
 }
