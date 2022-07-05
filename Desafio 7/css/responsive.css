@@ -1,0 +1,38 @@
+@media (max-width: 500px) {
+    .container .logos {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container > .logos {
+        width: calc(100% - 48px);
+        margin-top: 32px;
+        margin-bottom: 40.81px;
+    }
+
+    .container > .logos > p {
+        display: none;
+    }
+
+    .container > .content > .art {
+        display: none;
+    }
+
+    .personagem {
+        width: 132.86px;
+        background: url(../img/stroke.png);
+        position: absolute;
+    }
+
+    .personas > p {
+        display: none;
+    }
+
+    .personagem > img {
+        position: relative;
+        top: 6.25px;
+        left: 6.25px;
+    }
+}

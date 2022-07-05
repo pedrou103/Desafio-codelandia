@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    background: url(../img/fon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    mix-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.container>.logos {
+    color: #ffffff;
+    margin-top: 38px;
+    width: 81%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 29px;
+}
+
+.container>.logos>img:nth-child(1) {
+    width: 40px;
+    height: 27.19px;
+}
+
+.container>.logos>p {
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.container>.logos>img:nth-child(3) {
+    width: 24px;
+    height: 24px;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.content>.personas {
+    padding-left: 151px;
+    /* background-color: cadetblue; */
+    width: 100%;
+    height: 100%;
+}
+
+.personas p:nth-child(1) {
+    text-transform: uppercase;
+    font-size: 56px;
+    line-height: 76px;
+    -webkit-text-stroke: 2px solid #ffffff;
+}
