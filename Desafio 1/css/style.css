@@ -1,4 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lexend+Deca&display=swap);
+body {
+    height: 100vh;
+}
 
 .container {
     display: grid;
