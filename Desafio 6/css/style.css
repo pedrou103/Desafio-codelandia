@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=B612:wght@400;700&family=Open+Sans:wght@700&display=swap');
+
 body {
     width: 100vw;
     height: 100vh;
@@ -19,4 +21,106 @@ body {
     align-items: center;
 
     color: #FFFFFF;
+    font-family: 'B612', sans-serif;
+}
+
+.container p:nth-child(1) {
+    margin-top: 45px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container p:nth-child(2) {
+    margin-top: 35px;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 117px;
+}
+
+.content {
+    margin-top: 121px;
+    display: flex;
+    flex-direction: row;
+}
+.content div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content div:nth-child(2) {
+    margin-left: 73px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content div:nth-child(2) p {
+    margin-top: 0;
+    width: 722px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.content div:nth-child(2) .details {
+    /* background-color: blue; */
+    margin-top: 42.33px;
+    margin-left: 0;
+    height: 40px;
+    width: 630px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 700;
+    justify-content: center;
+}
+
+.content div:nth-child(2) .details .clock {
+    margin-top: 0;
+    float: left;
+    left: 0;
+    margin-right: 14.5px;
+}
+
+.content div:nth-child(2) .details .time {
+    width: auto;
+    margin-top: 0;
+    font-size: 24px;
+    line-height: 29px;
+    justify-content: center;
+    margin-right: 88.33px;
+}
+
+/* .content div:nth-child(2) .details .stars img {
+    width: 33.33px;
+    height: 33.17px;
+} */
+
+.content div:nth-child(2) .details .stars {
+    /* background-color: antiquewhite; */
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 15.67px;
+    margin-right: 97.66px;
+}
+
+.content div:nth-child(2) .details .year {
+    width: auto;
+    font-size: 24px;
+    line-height: 29.16px;
+}
+
+.actions {
+    margin-top: 40px;
+}
+
+button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 15px 27px;
 }
