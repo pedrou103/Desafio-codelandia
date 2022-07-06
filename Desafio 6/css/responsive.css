@@ -1,15 +1,4 @@
-@media (max-width: 500px) {
-
-    body {
-        width: 100vw;
-        height: 100vh;
-    }
-
-    .container {
-        width: 100vw;
-        height: 100vh;
-    }
-    
+@media (max-width: 500px) { 
     .container p:nth-child(1) {
         margin-top: 60px;
         font-size: 18px;
@@ -23,17 +12,32 @@
     }
 
     .content {
-        margin-top: 298px;
+        /* display: none; */
+        display: grid;
+        grid-template-rows: 1fr, 1fr, 1fr;
+        grid-template-areas: 
+        'stars'
+        'actions'
+        'description';
     }
 
     .content div:nth-child(1) {
         display: none;
     }
 
-    .content div:nth-child(2) {
-        background-color: #19191F;
+    .content>div:nth-child(2) .description {
+        width: 100%;
+        grid-area: description;
+        background-color: red;
     }
 
-    .content div:nth-child(2) p {
+    .content>div:nth-child(2) .details {
+        background-color: aqua;
+        grid-area: stars;
+    }
+
+    .content>div:nth-child(2) .actions {
+        background-color: burlywood;
+        grid-area: actions;
     }
 }

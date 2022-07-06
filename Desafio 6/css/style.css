@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=B612:wght@400;700&family=Open+Sans:wght@700&display=swap');
-
 body {
-    width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .container {
-    width: 100%;
+    min-width: 100vw;
     height: 100%;
 
     background: rgba(0, 0, 0, 0.7) url(../img/image.png);
