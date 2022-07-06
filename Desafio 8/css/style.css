@@ -1,34 +1,213 @@
+body {
+    background-color: var(--background);
+}
+
 .container {
     width: 80%;
     min-height: 100vh;
-    background-color: brown;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-areas:
+        'main'
+        'content'
+        'footer';
     margin: auto;
 }
 
 .main {
+    grid-area: main;
+    height: 50px;
     width: 100%;
+    margin-top: 41px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
+.main>p {
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.actions, .content, button {
+    text-transform: uppercase;
+}
+
+.main>.actions>div:nth-child(1) {
+    width: 50px;
+    height: 50px;
+    border: var(--border);
+    border-radius: 100%;
+    background-color: var(--background-buttons);
+}
+
+.main>.actions>div:nth-child(2) {
+    margin-left: 45px;
+    width: 183px;
+    height: 49px;
+    border: var(--border);
+    border-radius: 100px;
+    background-color: var(--background-buttons);
+    font-size: 16px;
+    line-height: 19px;
+}
+
 .content {
+    grid-area: content;
     width: 100%;
-    display: flex;
+    height: auto;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-top: 168px;
+}
+
+.content p:nth-child(1) {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.content p:nth-child(2) {
+    margin-top: 33px;
+    margin-bottom: 152px;
+    width: 900px;
+    font-size: 64px;
+    line-height: 70px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.content>div>button {
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.content>div>button:nth-child(1) {
+    background-color: var(--roxo);
+    border: 0;
+    color: var(--background);
+    font-weight: 600 !important;
+}
+
+.content>div>button:nth-child(2) {
+    margin-left: 52px;
+    border: var(--border);
+    background-color: var(--background);
 }
 
 .footer {
+    margin-top: 390px;
+    grid-area: footer;
+    height: 250px;
+    position: sticky;
     width: 100%;
-    display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-around !important;
+    background-color: var(--background-footer);
+}
+
+.footer>div {
+    width: 400px;
+}
+
+.footer>div>div {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 24px;
+    border-left: 3px solid var(--roxo);
+    padding-left: 12px;
+}
+
+.footer>div>p {
+    margin-top: 23px;
+    font-weight: 400 !important;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.back {
+    /* width: 100%; */
+    min-height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.back > div:nth-child(1) {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: 200px;
+}
+
+.back > div:nth-child(2) {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 197px;
+    left: 1400px;
+}
+
+.back > div:nth-child(3) {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 450px;
+    left: 100px
+}
+
+.back > div:nth-child(4) {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 850px;
+    left: 700px;
+}
+
+.back > div:nth-child(5) {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 650px;
+    left: 1300px;
+}
+
+.back > div:nth-child(1) > .flex {
+    background: url(../img/Rectangle\ 3.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;  
+}
+
+.back > div:nth-child(2) > .flex {
+    background: url(../img/Ellipse\ 65.png);
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.back > div:nth-child(3) > .flex {
+    background: url(../img/Rectangle\ 2.png);
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.back > div:nth-child(4) > .flex {
+    background: url(../img/Ellipse\ 66.png);
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.back > div:nth-child(5) > .flex {
+    background: url(../img/Polygon\ 1.png);
+    background-position: top !important;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
 }

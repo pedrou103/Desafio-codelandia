@@ -1,9 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sen:wght@400;700&display=swap');
+
 :root {
     
     /* variables colors */
     --background: #F9F9F9;
     --background-buttons: #FFFFFF;
-    --roxo :#6610F2;
+    --background-footer: #FCFCFC;
+    --roxo: #6610F2;
+    --color-text: #2F2F2F;
     
     --border: 2px solid #EAEAEA;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.mobile {
+    background: url(../img/fi_user.png) no-repeat center;
+}
+
+.position-background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
