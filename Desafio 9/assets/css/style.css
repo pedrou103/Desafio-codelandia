@@ -1,0 +1,30 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-areas: 
+    'header'
+    'content'
+    'footer';
+    background-color: darkgrey;
+    margin: auto;
+}
+
+header {
+    grid-area: header;
+    width: 80%;
+}
+
+header > nav, header > section {
+    justify-content: space-between !important;
+    background-color: red;
+}
+
+main {
+    grid-area: content;
+}
+
+footer {
+    grid-area: footer;
+}
