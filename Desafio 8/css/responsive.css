@@ -52,7 +52,7 @@
     }
 
     .footer {
-        margin-top: 210px;
+        margin-top: 270px;
         height: 220px;
         flex-direction: column;
         justify-content: center;
@@ -75,5 +75,72 @@
         font-style: italic;
         font-size: 12px;
         line-height: 16px;
+    }
+
+    .back {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .back > div > .flex > img {
+        width: 66px;
+        height: 66px;
+    }
+
+    .back > div:nth-child(1) {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: 150px;
+    }
+
+    .back > div:nth-child(2) {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 120px;
+        left: 200px;
+    }
+
+    .back > div:nth-child(3) {
+        display: none;
+    }
+
+    .back > div:nth-child(4) {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: 600px;
+        left: 0;
+    }
+
+    .back > div:nth-child(5) {
+        width: 150px;
+        height: auto;
+        position: absolute;
+        top: 600px;
+        left: 200px;
+    }
+    
+    .back > div:nth-child(1) > .flex {
+        background: url(../img/Rectangle\ 4.png);
+        background-size: cover;
+    }
+    
+    .back > div:nth-child(2) > .flex {
+        background-size: cover;
+    }
+
+    .back > div:nth-child(3) > .flex {
+        display: none;
+    }
+
+    .back > div:nth-child(4) > .flex {
+        background-size: cover;
+    }
+
+    .back > div:nth-child(5) > .flex {
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
