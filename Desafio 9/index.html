@@ -12,15 +12,32 @@
     <link rel="stylesheet" href="./assets/css/default.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
+<body id="tema" class="dark">
     <div class="container">
-        <header class="flex-column">
-            <nav class="flex-row">
-                <div>aaa</div>
-                <div>aaa</div>
+        <header>
+            <nav class="flex">
+                <div>Portfólio</div>
+                <div>
+                    <ul>
+                        <li><a href="#">Sobre mim</a></li>
+                        <li><a href="#">Projetos</a></li>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Minhas skills</a></li>
+                    </ul>
+                </div>
             </nav>
-            <section class="flex-row">
-                aaa
+            <section class="flex">
+                <div class="flex">
+                    <p>Olá, eu sou o Pedro Lucas :)</p>
+                    <p>Desenvolvedor Front-End & UI Designer</p>
+                    <div class="flex actions">
+                        <div>Download CV</div>
+                        <div>Entrar em contato</div>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assets/img/undraw_Lost.svg" alt="" srcset="">
+                </div>
             </section>
         </header>
         <main>
@@ -31,7 +48,10 @@
         </main>
         <Footer>
             <span></span>
+            <button id="theme">tema</button>
         </Footer>
     </div>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
