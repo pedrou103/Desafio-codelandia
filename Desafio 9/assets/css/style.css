@@ -18,7 +18,7 @@ header {
 }
 
 header>nav {
-    width: 90%;
+    width: 80%;
     justify-content: space-between !important;
     margin: auto;
 }
@@ -51,7 +51,7 @@ ul>li:nth-child(4)>a {
 header>section {
     margin: auto;
     margin-top: 110px;
-    width: 90%;
+    width: 80%;
     height: 255px;
     justify-content: space-between !important;
 }
@@ -62,13 +62,13 @@ header>section>div:nth-child(1) {
     align-items: flex-start !important;
 }
 
-header>section>div:nth-child(2)>img{
-    width: 100%;
-    height: auto;
+header>section>.imagens {
+    width: 300px;
+    height: 100%;
 }
 
 header>section>div:nth-child(1) p:nth-child(1) {
-    width: 250px;
+    width: 300px;
     margin-bottom: 18px;
     font-weight: 700;
     font-size: 36px;
@@ -99,6 +99,22 @@ header>section>div>.actions>div:nth-child(2) {
     background-color: transparent;
     border: 1px solid #333333;
     padding: 12px 18px;
+}
+
+header>section>.imagens {
+    position: relative;
+}
+
+header>section>.imagens>img {
+    height: 100%;
+    width: 100%;
+}
+
+header>section>.imagens>img:nth-child(1) {
+    position: absolute;
+    height: auto;
+    width: auto;
+    animation: levantar 6s ease-in-out infinite;
 }
 
 main {

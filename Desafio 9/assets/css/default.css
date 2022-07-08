@@ -23,3 +23,13 @@
     background-color: var(--background-2);
     color: var(--background);
 }
+
+@keyframes levantar {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
