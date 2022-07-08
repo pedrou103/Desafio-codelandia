@@ -1,0 +1,39 @@
+@media (max-width: 900px) {
+    #menu {
+        display: block;
+    }
+    
+    header {
+        margin-top: 24px;
+    }
+    
+    header > section {
+        /* flex-direction: column-reverse; */
+        justify-content: center;
+    }
+    
+    header>nav>div:nth-child(1) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    header > nav > div:nth-child(2) {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header>section {
+        margin: auto;
+        margin-top: 110px;
+        width: 80%;
+        height: 255px;
+        justify-content: space-between !important;
+    }
+
+    header>section>.imagens {
+        display: none;
+    }
+
+    main, Footer {
+        display: initial;
+    }
+}

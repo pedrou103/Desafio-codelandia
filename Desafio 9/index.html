@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="./assets/css/default.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body id="tema" class="dark">
     <div class="container">
@@ -19,16 +20,17 @@
                 <div>Portfólio</div>
                 <div>
                     <ul>
-                        <li><a href="#">Sobre mim</a></li>
-                        <li><a href="#">Projetos</a></li>
-                        <li><a href="#">Serviços</a></li>
-                        <li><a href="#">Minhas skills</a></li>
+                        <li><a href="#about-me">Sobre mim</a></li>
+                        <li><a href="#project">Projetos</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#skills">Minhas skills</a></li>
                     </ul>
                 </div>
+                <div id="menu"><img src="./assets/img/menu hamburguer.png" alt=""></div>
             </nav>
             <section class="flex">
                 <div class="flex">
-                    <p>Olá, eu sou o Pedro Lucas 🧑🏽‍💻</p>
+                    <p>Olá, eu sou o Pedro Lucas 👨‍💻</p>
                     <p>Desenvolvedor Front-End & UI Designer</p>
                     <div class="flex actions">
                         <div>Download CV</div>
@@ -42,13 +44,100 @@
             </section>
         </header>
         <main>
-            <section class="about-me"></section>
-            <section class="project"></section>
-            <section class="services"></section>
-            <section class="skills"></section>
+            <section id="about-me" class="about-me flex">
+                <h2 class="title flex">Sobre mim</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum sit accusantium nam excepturi eveniet quibusdam, quidem consectetur maiores officia, voluptate labore voluptas animi veniam? Optio ipsam minus accusamus eligendi ipsa!</p>
+                <div class="contato">
+                    <div class="flex bolinha">
+                        <div class="circle flex"><img src="./assets/img/smile.png" alt="" srcset=""></div>
+                        <span class="title-2">Meu nome</span>
+                        <span class="subtitle">Pedro Lucas</span>
+                    </div>
+                    <div class="flex bolinha">
+                        <div class="circle flex"><img src="./assets/img/mail.png" alt=""></div>
+                        <span class="title-2">E-mail</span>
+                        <span class="subtitle">pedroluca13.plm40@gmail.com</span>
+                    </div>
+                    <div class="flex bolinha">
+                        <div class="circle flex"><img src="./assets/img/instagram.png" alt=""></div>
+                        <span class="title-2">Instagram</span>
+                        <span class="subtitle">@pedroluca_103</span>
+                    </div>
+                    <div class="flex bolinha">
+                        <div class="circle flex"><img src="./assets/img/phone.png" alt=""></div>
+                        <span class="title-2">Telefone</span>
+                        <span class="subtitle">(88) 99499-4331</span>
+                    </div>
+                </div>
+            </section>
+            <section id="project" class="project flex">
+                <h2 class="title">Projetos</h2>
+                <div class="cards">
+                    <div class="cards-grid grid-template">
+                        
+                        <div class="card border">
+                            <div class="image border flex">image</div>
+                            <p class="title-2">Título do projeto</p>
+                            <span class="subtitle-2">Tecnologias: HTML, CSS e JS.</span>
+                        </div>
+                        <div class="card border">
+                            <div class="image border flex">image</div>
+                            <p class="title-2">Título do projeto</p>
+                            <span class="subtitle-2">Tecnologias: HTML, CSS e JS.</span>
+                        </div>
+                        <div class="card border">
+                            <div class="image border flex">image</div>
+                            <p class="title-2">Título do projeto</p>
+                            <span class="subtitle-2">Tecnologias: HTML, CSS e JS.</span>
+                        </div>
+                        <div class="card border">
+                            <div class="image border flex">image</div>
+                            <p class="title-2">Título do projeto</p>
+                            <span class="subtitle-2">Tecnologias: HTML, CSS e JS.</span>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section id="services" class="services flex">
+                <h2 class="title">Serviços</h2>
+
+                <div class="cards">
+                    <div class="cards-grid grid-template">
+                        <div class="servico border">
+                            <img src="./assets/img/code.png" alt="">
+                            <p class="title">Criação de sites</p>
+                        </div>
+                        <div class="servico border">
+                            <img src="./assets/img/figma.png" alt="">
+                            <p class="title">UI Designer</p>
+                        </div>
+                        <div class="servico border">
+                            <img src="./assets/img/smartphone.png" alt="">
+                            <p class="title">Sites responsivos</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section id="skills" class="skills flex">
+                <h2 class="title">Minhas skills</h2>
+
+                <div class="flex">
+                    <div class="skill border flex">
+                        <img src="./assets/img/html.png" alt="">
+                    </div>
+                    <div class="skill border flex">
+                        <img src="./assets/img/css.png" alt="">
+                    </div>
+                    <div class="skill border flex">
+                        <img src="./assets/img/js.png" alt="">
+                    </div>
+                </div>
+            </section>
         </main>
-        <Footer>
-            <span></span>
+        <Footer class="flex">
+            <span class="subtitle flex">Orgulhosamente feito por<p>Pedro Lucas</p></span>
             <button id="theme">tema</button>
         </Footer>
     </div>

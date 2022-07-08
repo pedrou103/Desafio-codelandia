@@ -11,3 +11,9 @@ theme.addEventListener('click', function() {
         document.getElementById('tema').classList.add('dark');
     }
 })
+
+// let menu = document.getElementById('menu');
+
+if (window.screen.width <= 900) { 
+    console.log(window.screen.width)
+}

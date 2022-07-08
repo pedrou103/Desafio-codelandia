@@ -1,5 +1,5 @@
 .container {
-    width: 100%;
+   max-width: 1400px;
     min-height: 100vh;
     display: grid;
     grid-template-rows: 1fr, 1fr, 1fr;
@@ -36,6 +36,10 @@ header>nav>div>ul {
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
+}
+
+#menu {
+    display: none;
 }
 
 ul>li>a {
@@ -119,8 +123,105 @@ header>section>.imagens>img:nth-child(1) {
 
 main {
     grid-area: content;
+    width: 100%;
+}
+
+.about-me {
+    margin-top: 169px;
+    flex-direction: column;
+}
+
+.about-me p {
+    margin: auto;
+    margin-top: 30px;
+    width: 50%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--background-4);
+}
+
+.contato {
+    margin-top: 85px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project, .services, .skills {
+    width: 80%;
+    margin: auto;
+    margin-top: 127px;
+    flex-direction: column;
+}
+
+.project .title, .services .title, .skills .title {
+    margin-bottom: 30px;
+}
+
+.cards
+{
+    width: 100%;
+}
+
+.cards .card {
+    background-color: var(--background-5);
+    padding: 20px 25px;
+}
+
+.card div {
+    background: var(--background-3);
+    width: 100%;
+    height: 130px;
+    margin-bottom: 23px;
+}
+
+.card div .subtitle-2 {
+    margin-top: 6px;
+}
+
+.services .servico {
+    height: 240px;
+    background-color: var(--background-5);
+    border-bottom: 5px solid var(--background-3);
+    padding: 30px;
+}
+
+.services div .servico p {
+    font-weight: 500 !important;
+    color: var(--background-4);
+    width: 126px;
+    margin-top: 40px;
+}
+
+.skills div {
+    column-gap: 51px;
+}
+
+.skills div .skill {
+    width: 150px;
+    height: 150px;
+    background-color: var(--background-5);
 }
 
 footer {
+    margin-top: 185px;
     grid-area: footer;
+    height: 60px;
+    width: 100%;
+    background-color: var(--background-5);
+    flex-direction: row;
+}
+
+footer .subtitle {
+    width: auto;
+    color: var(--background);
+    flex-direction: row;
+}
+
+footer .subtitle p {
+    margin-left: 5px;
+    color: var(--background-3);
 }
