@@ -1,5 +1,5 @@
 .container {
-   max-width: 1400px;
+    max-width: 1400px;
     min-height: 100vh;
     display: grid;
     grid-template-rows: 1fr, 1fr, 1fr;
@@ -12,12 +12,13 @@
 
 header {
     grid-area: header;
-    margin-top: 35px;
+    /* margin-top: 35px; */
     width: 100%;
     height: auto;
 }
 
 header>nav {
+    padding-top: 35px;
     width: 80%;
     justify-content: space-between !important;
     margin: auto;
@@ -42,6 +43,10 @@ header>nav>div>ul {
     display: none;
 }
 
+#menu svg rect {
+    fill: var(--background) !important;
+}
+
 ul>li>a {
     margin-right: 45px;
     color: var(--background);
@@ -54,7 +59,8 @@ ul>li:nth-child(4)>a {
 
 header>section {
     margin: auto;
-    margin-top: 110px;
+    /* margin-top: 110px; */
+    margin-top: 169px;
     width: 80%;
     height: 255px;
     justify-content: space-between !important;
@@ -87,7 +93,8 @@ header>section>div:nth-child(1) p:nth-child(2) {
     margin-bottom: 35px;
 }
 
-header>section>div>.actions>div {
+header>section>div>.actions>div,
+.cards > .grid-template > .card > section > a {
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
@@ -150,20 +157,43 @@ main {
     gap: 20px;
 }
 
-.project, .services, .skills {
+.project,
+.services,
+.skills {
     width: 80%;
     margin: auto;
     margin-top: 127px;
     flex-direction: column;
 }
 
-.project .title, .services .title, .skills .title {
+.project .title,
+.services .title,
+.skills .title {
     margin-bottom: 30px;
 }
 
-.cards
-{
+.destaque {
+    color: var(--background-3);
+}
+
+.cards {
     width: 100%;
+}
+
+.cards > .grid-template > .card > section {
+    margin-top: 15px;
+    gap: 20px;
+    justify-content: flex-start !important;
+}
+
+.cards > .grid-template > .card > section > a {
+    text-decoration: none;
+    color: var(--background);
+    padding: 8px 20px;
+}
+
+.cards > .grid-template > .card > section > a:nth-child(2) {
+    background-color: var(--background-3);
 }
 
 .cards .card {
@@ -213,6 +243,7 @@ footer {
     width: 100%;
     background-color: var(--background-5);
     flex-direction: row;
+    gap: 20px;
 }
 
 footer .subtitle {
@@ -224,4 +255,29 @@ footer .subtitle {
 footer .subtitle p {
     margin-left: 5px;
     color: var(--background-3);
+}
+
+#theme {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border-top: 3px solid var(--background);
+    border-left: 3px solid var(--background);
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid transparent;
+    background-color: transparent;
+    color: var(--background);
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--background-3);
+    border-radius: 20px;
 }

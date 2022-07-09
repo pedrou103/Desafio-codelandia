@@ -1,0 +1,13 @@
+section > .cards > .cards-grid > .card:nth-child(1) > .image {
+    background: url(../img/pokedex.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section > .cards > .cards-grid > .card:nth-child(2) > .image {
+    background: url(../img/calculadora.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

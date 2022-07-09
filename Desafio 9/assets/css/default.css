@@ -59,14 +59,20 @@
     border: 1px solid var(--background-6);
 }
 
-.light {
-    background-color: var(--background);
-    color: var(--background-2);
-}
-
 .dark {
     background-color: var(--background-2);
     color: var(--background);
+}
+
+.light {
+    --background: #171717;
+    --backgroun-2: #f9f9f9;
+    --background-4: #333333;
+    --background-5: #787373;
+}
+
+.disabled {
+    background-color: #787373 !important;
 }
 
 .grid-template
@@ -74,6 +80,10 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 40px;
+}
+
+.colapse {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
 }
 
 @keyframes levantar {

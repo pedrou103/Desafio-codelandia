@@ -6,14 +6,18 @@ theme.addEventListener('click', function() {
     if (content == true) {
         document.getElementById('tema').classList.remove('dark');  
         document.getElementById('tema').classList.add('light');
+        theme.innerText='dark';
     } else {
         document.getElementById('tema').classList.remove('light');  
         document.getElementById('tema').classList.add('dark');
+        theme.innerText='light';
     }
 })
 
-// let menu = document.getElementById('menu');
+let menu = document.getElementById('menu');
 
-if (window.screen.width <= 900) { 
-    console.log(window.screen.width)
-}
+// if (window.screen.width <= 900) {
+    menu.addEventListener('click', function() {
+        document.getElementById('links').classList.toggle('colapse')
+    })
+// }
