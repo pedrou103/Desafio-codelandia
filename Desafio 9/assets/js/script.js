@@ -14,10 +14,19 @@ theme.addEventListener('click', function() {
     }
 })
 
-let menu = document.getElementById('menu');
+// let menu = document.getElementById('menu');
 
-// if (window.screen.width <= 900) {
-    menu.addEventListener('click', function() {
-        document.getElementById('links').classList.toggle('colapse')
-    })
-// }
+// // if (window.screen.width <= 900) {
+//     menu.addEventListener('click', function() {
+//         document.getElementById('links').classList.toggle('colapse')
+//     })
+// // }
+
+const btnMenu = document.getElementById('menu');
+const navbar = document.querySelector('.navbar');
+
+btnMenu.onclick = () =>
+{
+    navbar.classList.toggle('active')
+    console.log('clicou')
+}

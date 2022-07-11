@@ -14,28 +14,35 @@
         margin-top: 56px;
     }
 
-    header>nav {
-        padding-top: 35px;
-        width: 100%;
-        justify-content: space-between !important;
-        margin: auto;
-    }
-
-    nav {
-        width: 80%;
-        padding: 0 10%;
-        position: fixed;
-        /* background-color: red; */
-        z-index: 1;
-    }
-
     header>nav>div:nth-child(1) {
         font-size: 14px;
         line-height: 18px;
     }
 
-    header>nav>div:nth-child(2) {
+    header > nav > div:nth-child(2) {
+        position: absolute;
+        top: 150%; left: 0;
+        width:100%;
+        background: var(--background-2);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: clip-path .5s ease-in-out;
+    }
+
+    header > nav > div:nth-child(2).active
+    {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header nav div:nth-child(2) ul
+    {
+        
+        flex-direction: column;
+        display: flex;
+    }
+    header nav div:nth-child(2) ul li
+    {
+        margin: 20px 0;
+        /* text-align: center; */
     }
 
     header>section {
