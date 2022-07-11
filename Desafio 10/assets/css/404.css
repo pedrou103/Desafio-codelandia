@@ -1,0 +1,42 @@
+main>.content {
+    padding-top: 182 !important;
+    width: 100%;
+}
+
+main>.content>#conteudo {
+    width: 100%;
+}
+
+main>.content>#conteudo>p {
+    width: 457px;
+}
+
+main>.content>#conteudo>span {
+    margin-top: 17px;
+    width: 495px;
+}
+
+main>.content>#conteudo>a {
+    margin-top: 41px;
+    width: 175px;
+    font-size: 18px;
+    line-height: 34px;
+    text-align: center;
+}
+
+main>.content>#image {
+    width: 100%;
+}
+
+main>.content>#image>span {
+    width: 298px;
+    margin-top: 44px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@media (max-width:1200px) {
+    main>.content {
+        flex-direction: column;
+    }
+}

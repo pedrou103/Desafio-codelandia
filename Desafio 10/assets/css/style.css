@@ -3,7 +3,7 @@ body {
 }
 
 .menu {
-    padding: 26px 0px;
+    padding-top: 26px;
 }
 
 .logo {
@@ -33,6 +33,10 @@ body {
     line-height: 18px;
 }
 
+.btn-menu {
+    display: none;
+}
+
 .menu>.navbar>.menu-links>a {
     position: relative;
 }
@@ -55,7 +59,7 @@ body {
 }
 
 main>.content {
-    padding: 115px 0 0 0;
+    padding-top: 115px;
     margin-bottom: 95px;
 }
 
@@ -139,7 +143,7 @@ main>.content>.atuais>.sub-principais {
 }
 
 .principais>.noticias>.sub-noticias>.article>.conteudo>p {
-    width: 80%;
+    width: 90%;
     font-size: 17px;
     line-height: 20px;
 }

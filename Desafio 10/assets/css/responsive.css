@@ -1,5 +1,125 @@
 @media (max-width:1200px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .content {
         padding: 0 30px;
+    }
+
+    .btn-menu {
+        display: block;
+    }
+
+    .sub-principais {
+        display: none;
+    }
+
+    .logo {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .menu-links {
+        display: none;
+    }
+
+    .title {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .btn-conta {}
+
+    main>.content {
+        padding-top: 48px;
+        margin-bottom: 40px;
+    }
+
+    main>.content>div>p {
+        width: 243px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    main>.content>div>span {
+        margin-top: 16px;
+        width: 312px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    main>.content>.atuais {
+        margin-top: 80px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'principais';
+    }
+
+    .principais>.noticias>.card-1 {
+        padding: 8px;
+    }
+
+    .principais>.noticias>.card>p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .principais>.noticias>.sub-noticias {
+        margin-bottom: 47px;
+        height: 400px;
+        gap: 25px;
+    }
+
+    .principais>.noticias>.sub-noticias>.article>.image {
+        width: 150px;
+        height: 110px;
+    }
+
+    .principais>.noticias>.sub-noticias>.article>.conteudo {
+        padding-left: 8px;
+        gap: 16px;
+    }
+
+    .principais>.noticias>.sub-noticias>.article>.conteudo>p {
+        width: 90%;
+        font-size: 14px;
+        line-height: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        max-height: 32px;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    .principais>.noticias>.sub-noticias>.article>.conteudo>span:nth-child(2) {
+        display: none;
+    }
+
+    .principais>.noticias>.sub-noticias>.article>.conteudo>span:nth-child(3) {
+        font-size: 12px;
+        line-height: 10px;
+    }
+
+    .principais>.noticias>.sub-noticias>.article>.conteudo>.lorem {
+        font-weight: 500;
+        width: 90%;
+        font-size: 10px;
+        line-height: 12px;
+        text-align: center;
+    }
+
+    .grid-template
+    {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 24px;
+    }
+
+    footer>.content>div>span {
+        width: 312px;
+        margin-bottom: 78px;
+        font-size: 14px;
+        line-height: 20px;
     }
 }

@@ -1,0 +1,78 @@
+main>.content {
+    padding-top: 91px !important;
+}
+
+.image-background {
+    height: 300px;
+    justify-content: center;
+    padding-left: 45px;
+    margin-bottom: 42px;
+}
+
+.search {
+    background-color: var(--color5);
+    height: 60px;
+    padding-left: 25px;
+    margin-bottom: 100px;
+}
+
+.search>input {
+    background-color: transparent;
+    width: 95%;
+    border: 0;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.search>input::placeholder {
+    color: var(--color7);
+}
+
+.search>input:focus {
+    outline-style: none;
+}
+
+.search>span {
+    width: 5% !important;
+}
+
+main>.content>.image-background {
+    background: url(../img/capa-noticia-2.png) center no-repeat;
+    background-size: cover;
+}
+
+main>.content>section>.conteudo>.img1 {
+    background: url(../img/noticia-1.png) center no-repeat;
+    background-size: cover;
+}
+
+main>.content>section>.conteudo>.img2 {
+    background: url(../img/noticia-7.png) center no-repeat;
+    background-size: cover;
+}
+
+main>.content>section>.conteudo>.img3 {
+    background: url(../img/noticia-8.png) center no-repeat;
+    background-size: cover;
+}
+
+.paginacao {
+    margin-top: 62px;
+    gap: 8px;
+}
+
+.paginacao > a {
+    width: 32px;
+    height: 32px;
+    background-color: var(--color5);
+    border-radius: 3px;
+}
+
+.paginacao > .anterior {
+    color: var(--color8);
+} 
+
+.paginacao > .ativo {
+    color: var(--color2) !important;
+    border: 1px solid var(--color2) !important;
+}
