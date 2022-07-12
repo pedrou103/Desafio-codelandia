@@ -1,4 +1,11 @@
-@media (max-width: 500px) {
+@media (max-width: 900px) {
+    body {
+        min-height: 100vh;
+    }
+    
+    .container {
+        min-height: 100vh;
+    }
 
     .container .logos {
         width: 100%;
@@ -43,6 +50,7 @@
     }
     
     .personagem > .ps {
+        margin-top: 10px;
         width: 132.86px;
         height: 132.86px;
         margin-bottom: 32.7px;

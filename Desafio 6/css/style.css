@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=B612:wght@400;700&family=Open+Sans:wght@700&display=swap');
 body {
-    min-height: 100vh;
+    height: 100%;
 }
 
 .container {
     min-width: 100vw;
-    height: 100%;
+    height: 100vh;
 
     background: rgba(0, 0, 0, 0.7) url(../img/image.png);
     background-repeat: no-repeat;

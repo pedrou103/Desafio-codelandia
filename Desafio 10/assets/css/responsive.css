@@ -20,16 +20,50 @@
         line-height: 28px;
     }
 
-    .menu-links {
-        display: none;
-    }
-
     .title {
         font-size: 22px;
         line-height: 28px;
     }
 
-    .btn-conta {}
+    .menu {
+        position: relative;
+        padding-bottom: 20px
+    }
+
+    .menu-links {
+        gap: 15px;
+    }
+
+    header > .content > .menu > .navbar > .menu-links {
+        justify-content: center;
+        padding-top: 20px;
+        position: absolute;
+        top: 90%;
+        left: 0;
+        width: 100%;
+        background-color: var(--color);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: clip-path .5s ease-in-out;
+        z-index: 1;
+    }
+
+    header > .content > .menu > .navbar > .menu-links>a:hover {
+        background-color: var(--color2-5);
+        transform: scale(1.2);
+        color: var(--color3) !important;
+    }
+
+    header > .content > .menu > .navbar > .menu-links.acionado {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .btn-conta {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
 
     main>.content {
         padding-top: 48px;

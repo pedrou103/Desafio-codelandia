@@ -33,6 +33,7 @@ main>.content {
 }
 
 .search>span {
+    margin-top: 0 !important;
     width: 5% !important;
 }
 
@@ -61,18 +62,56 @@ main>.content>section>.conteudo>.img3 {
     gap: 8px;
 }
 
-.paginacao > a {
+.paginacao>a {
     width: 32px;
     height: 32px;
     background-color: var(--color5);
     border-radius: 3px;
 }
 
-.paginacao > .anterior {
+.paginacao>.anterior {
     color: var(--color8);
-} 
+}
 
-.paginacao > .ativo {
+.paginacao>.ativo {
     color: var(--color2) !important;
     border: 1px solid var(--color2) !important;
+}
+
+@media (max-width:900px) {
+    main>.content {
+        padding-top: 48px !important;
+    }
+
+    .image-background {
+        justify-content: end;
+        padding-bottom: 18px;
+        padding-left: 10px;
+    }
+
+    .image-background>p {
+        font-size: 24px;
+        line-height: 16px;
+    }
+
+    .image-background>span {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .search {
+        height: 40px;
+        padding-left: 10px;
+        margin-bottom: 56px;
+    }
+
+    .search>input {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .search>span>img {
+        width: 12px;
+        height: 12px;
+    }
 }
