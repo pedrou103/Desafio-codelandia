@@ -8,7 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(130.02deg, #628E75 0.66%, #1A4855 83.32%);
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,7 +18,6 @@ body {
     margin-top: 41px;
     width: calc(100vw - 350px);
     display: flex;
-    /* background-color: chocolate; */
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +28,6 @@ body {
 }
 
 .content {
-    /* margin-top: 165px; */
     width: calc(100vw - 350px);
     height: 414px;
     display: flex;
@@ -37,22 +35,13 @@ body {
     justify-content: space-between;
     align-items: center;
     color: #f9f9f9;
-}
-
-.info {
-    margin-top: 75.89px;
-    left: 0;
+    margin-top: 5%;
 }
 
 .content > .image {
     margin-top: 45px;
     margin-left: 165px;
     width: auto;
-    height: auto;
-}
-
-.content > .image > img {
-    width: 100%;
     height: auto;
 }
 
@@ -86,7 +75,9 @@ body {
     flex-direction: row;
 }
 
-.actions div:nth-child(1){
+.actions div:nth-child(1) {
+    margin-left: 7px;
+    margin-right: 20px;
     width: 200px;
     height: 45px;
     background-color: #658E76;
@@ -115,4 +106,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: skew(-20deg);
 }
+
+.actions div:nth-child(2) span {
+    transform: skew(20deg);
+}
+

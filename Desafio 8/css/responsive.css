@@ -1,4 +1,4 @@
-@media (max-width: 500px) {
+@media (max-width: 900px) {
     .main {
         margin-top: 24px;
     }
@@ -77,11 +77,6 @@
         line-height: 16px;
     }
 
-    .back {
-        width: 100%;
-        min-height: 100vh;
-    }
-
     .back > div > .flex > img {
         width: 66px;
         height: 66px;
@@ -90,16 +85,15 @@
     .back > div:nth-child(1) {
         width: 100px;
         height: 100px;
-        position: relative;
-        top: 150px;
+        position: absolute;
+        top: 20%;
     }
 
     .back > div:nth-child(2) {
         width: 100px;
         height: 100px;
         position: absolute;
-        top: 120px;
-        left: 200px;
+        top: 15%;
     }
 
     .back > div:nth-child(3) {
@@ -109,17 +103,16 @@
     .back > div:nth-child(4) {
         width: 100px;
         height: 100px;
-        position: relative;
-        top: 600px;
-        left: 0;
+        position: absolute;
+        top: 70%;
+        left: 8%;
     }
 
     .back > div:nth-child(5) {
         width: 150px;
         height: auto;
         position: absolute;
-        top: 600px;
-        left: 200px;
+        top: 80%;
     }
     
     .back > div:nth-child(1) > .flex {

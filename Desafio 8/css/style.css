@@ -129,49 +129,46 @@ body {
 }
 
 .back {
-    /* width: 100%; */
-    min-height: 100vh;
-    position: absolute;
     z-index: -1;
 }
 
 .back > div:nth-child(1) {
     width: 300px;
     height: 300px;
-    position: relative;
-    top: 200px;
+    position: absolute;
+    top: 15%;
 }
 
 .back > div:nth-child(2) {
     width: 200px;
     height: 200px;
     position: absolute;
-    top: 197px;
-    left: 1400px;
+    top: 20%;
+    right: 8%;
 }
 
 .back > div:nth-child(3) {
     width: 200px;
     height: 200px;
-    position: relative;
-    top: 450px;
-    left: 100px
+    position: absolute;
+    top: 80%;
+    left: 15%;
 }
 
 .back > div:nth-child(4) {
     width: 200px;
     height: 200px;
     position: absolute;
-    top: 850px;
-    left: 700px;
+    top: 95%;
+    left: 50%;
 }
 
 .back > div:nth-child(5) {
     width: 200px;
     height: 200px;
     position: absolute;
-    top: 650px;
-    left: 1300px;
+    top: 70%;
+    right: 7%;
 }
 
 .back > div:nth-child(1) > .flex {

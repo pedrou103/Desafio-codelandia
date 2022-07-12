@@ -1,4 +1,4 @@
-if (window.screen.width < 500) {
+if (window.screen.width < 900) {
     document.getElementById('login').innerText = '';
     document.getElementById('login').classList.add('mobile');
 } else {

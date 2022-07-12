@@ -9,15 +9,15 @@
         height: 377px;
         width: 100%;
     }
-    
-    .imgback > .title {
+
+    .imgback>.title {
         width: 350px;
         margin-left: 20px;
         font-size: 28px;
         line-height: 34px;
     }
 
-    .imgback > .subtitle {
+    .imgback>.subtitle {
         width: 357px;
         margin-left: 20px;
         font-size: 16px;
@@ -29,27 +29,35 @@
         margin-top: 50px;
     }
 
-    .destaque > #title {
+    .destaque>#title {
         font-size: 28px;
         line-height: 55px;
     }
 
-    .destaque > #subtitle {
+    .destaque>#subtitle {
         width: 374px;
         font-size: 16px;
         line-height: 29px;
     }
 
-    .destaque > .cards {
+    .destaque>.cards {
         margin-top: 0;
     }
 
-    .destaque > .cards > .card {
+    .destaque>.cards>.card {
         width: 90%;
         margin: 15px 0 0 0;
     }
 
     .footer {
         margin-top: 35px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .imgback>.title,
+    .imgback>.subtitle {
+        margin-left: 330px;
     }
 }

@@ -1,4 +1,4 @@
-@media (max-width: 420px) {
+@media (max-width: 900px) {
     .container {
         width: 100%;
 
@@ -12,16 +12,16 @@
 
     .info {
         margin-top: 55px;
-        margin-left: 20px;
+        /* margin-left: 20px; */
     }
 
     .info p:nth-child(1) {
-        width: 374px;
+        width: 100%;
         font-size: 32px;
     }
 
     .info p:nth-child(2) {
-        width: 374px;
+        width: 100%;
         margin-top: 18px;
         font-size: 18px;
     }
@@ -40,8 +40,44 @@
         justify-content: center;
     }
 
-    .image > img {
+    .image>img {
         width: 350px;
         height: auto;
+    }
+
+    .main>.cards {
+        gap: 30px;
+    }
+
+    .footer {
+        height: 700px;
+    }
+
+    .footer>div>p {
+        margin-top: 83px;
+        margin-bottom: 36px;
+    }
+
+    .footer>div>form {
+        width: 100%;
+    }
+
+    form>input,
+    form>textarea {
+        height: 60px;
+        margin-bottom: 20px;
+        padding-left: 15px;
+    }
+
+    form>textarea {
+        padding-top: 21px;
+        resize: none;
+        height: 165px;
+    }
+
+    .footer>div>button {
+        margin-top: 30px;
+        width: 100%;
+        color: #ffffff;
     }
 }
