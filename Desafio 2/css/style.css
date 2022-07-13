@@ -116,6 +116,10 @@
     margin: 6.5px;
 }
 
+.destaque > .cards > .card > img:hover {
+    transform: scale(1.2);
+}
+
 .footer {
     margin-top: 93.5px;
     grid-area: footer;

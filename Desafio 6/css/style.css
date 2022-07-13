@@ -37,7 +37,7 @@ body {
 }
 
 .content {
-    margin-top: 15%;
+    margin-top: 10%;
     display: flex;
     flex-direction: row;
 }

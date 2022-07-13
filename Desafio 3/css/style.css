@@ -14,7 +14,7 @@ body {
 
 .head {
     grid-area: head;
-    width: 75%;
+    width: 87%;
     height: 560px;
     display: flex;
     flex-direction: row;
@@ -78,7 +78,7 @@ body {
 }
 
     .main>.cards {
-        width: 80%;
+        width: 90%;
         height: auto;
         padding-top: 150px;
         padding-bottom: 82px;

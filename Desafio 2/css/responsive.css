@@ -49,15 +49,20 @@
         margin: 15px 0 0 0;
     }
 
+    .destaque > .cards > .card > img:hover {
+        transform: scale(1.4);
+    }
+
     .footer {
         margin-top: 35px;
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
 
     .imgback>.title,
     .imgback>.subtitle {
+        background-color: red;
         margin-left: 330px;
     }
 }
