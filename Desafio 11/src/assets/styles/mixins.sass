@@ -1,9 +1,16 @@
 @use 'variables'
 
-@mixin card
+@mixin flex
     display: flex
+
+@mixin center
+    @include flex
+    align-items: center
     justify-content: center
-    align-content: center
+
+@mixin card
+    @include center
     width: 160px
     height: 160px
-    background: variables.$color-gray
+    // background: variables.$color-gray
+    background: red

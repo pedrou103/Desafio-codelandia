@@ -1,0 +1,29 @@
+@use '../variables'
+@use '../mixins'
+
+header
+    @include mixins.flex
+    flex-direction: column
+    align-items: center
+    width: 100%
+    padding: 100px 0
+
+    h1
+        font-weight: 400
+        font-size: 72px
+        line-height: 83px
+        letter-spacing: 0.1em
+        color: variables.$color-yellow
+        text-shadow: variables.$shadow-text
+        padding-bottom: 40px
+        font-family: variables.$font-principal
+    
+    select
+        width: 285px
+        height: auto
+        background: variables.$color-red
+        padding: 13px 0 13px 20px
+        color: variables.$color-yellow
+        border:1px solid variables.$color-yellow
+        border-radius: variables.$border-radius-secondary
+        font-family: variables.$font-secundaria
