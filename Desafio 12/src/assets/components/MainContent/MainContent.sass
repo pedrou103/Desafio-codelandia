@@ -1,0 +1,24 @@
+@use '../../styles/variables'
+@use '../../styles/mixins'
+
+main
+    @include mixins.center
+    flex-direction: column
+    margin: auto
+    width: 100%
+    height: auto
+
+    section
+        width: 90%
+
+    #cards
+        @include mixins.center
+        padding-top: 141px
+        padding-bottom: 193px
+        flex-direction: column
+
+        p
+            font-weight: variables.$weight-font
+            font-size: variables.$font-size-title
+            line-height: 45px
+            color: variables.$color-text
