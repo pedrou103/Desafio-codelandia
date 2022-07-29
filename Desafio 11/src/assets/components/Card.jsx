@@ -1,6 +1,6 @@
 import '../styles/components/Card.sass';
 
-const Card = ({ id, name, flipped = false, handleClick}) => {
+const Card = ({ id, name, flipped, handleClick}) => {
     const classNamesContentInCard = ['card_content'];
     flipped && classNamesContentInCard.push('card_content--flipped');
 

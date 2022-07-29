@@ -4,15 +4,15 @@ import '../styles/components/Main.sass'
 import { useRef, useState } from "react";
 
 const images = [
-    { id: 1, name: '01.png' },
-    { id: 2, name: '02.png' },
-    { id: 3, name: '03.png' },
-    { id: 4, name: '04.png' },
-    { id: 5, name: '05.png' },
-    { id: 6, name: '06.png' },
-    { id: 7, name: '07.png' },
-    { id: 8, name: '08.png' },
-    { id: 9, name: '09.png' },
+    { id: 1, name: '01.png', flipped: false },
+    { id: 2, name: '02.png', flipped: false },
+    { id: 3, name: '03.png', flipped: false },
+    { id: 4, name: '04.png', flipped: false },
+    { id: 5, name: '05.png', flipped: false },
+    { id: 6, name: '06.png', flipped: false },
+    { id: 7, name: '07.png', flipped: false },
+    { id: 8, name: '08.png', flipped: false },
+    { id: 9, name: '09.png', flipped: false },
 ];
 
 const KeyGen = () => {
@@ -49,13 +49,13 @@ const Main = () => {
 
     const first = useRef(null);
     const second = useRef(null);
-    const unflip = useRef(false)
+    const unflip = useRef(false);
+    const [mathes, setMatches] = useState(0);
 
     const handleClick = (id) => {
         const newStateCards = stateCards.map(card => {
             //Se o id do card não for o id clicado não acontece nada
             if (card.id !== id) return card;
-            alert(`${card.id}`)
             //Se o card já estiver visivel, não faz nada
             if (card.flipped) return card;
 
@@ -71,17 +71,19 @@ const Main = () => {
             card.flipped = true;
 
             // Configura 1 e 2 clicados
-            if (first.current === null) {
+            if (first.current == null) {
                 first.current = card
-            } else if (second.current === null) {
+            } else if (second.current == null) {
                 second.current = card;
             }
 
             if (first.current && second.current) {
-                if (first.current.back === second.current.back) {
+                if (first.current.name === second.current.name) {
                     //estado de acerto
                     first.current = null;
                     second.current = null;
+
+                    setMatches((m) => m + 1);
                 } else {
                     //estado de erro
                     unflip.current = true
@@ -94,14 +96,24 @@ const Main = () => {
         setstateCards(newStateCards);
     };
 
+    if (mathes >= images.length) {
+        console.log(unflip.current)
+        if (first.current == null && second.current == null && unflip.current == false) {
+            alert("game concluido")
+        }
+    }
+
     return (
-        <main id="cards">
-            {stateCards.map((img, index) => (
-                <Card key={index} name={`src/assets/img/${img.name}`} id={img.id} handleClick={handleClick} />
-            ))}
-            <div id='light' className='topo'></div>
-            <div id='light' className='bottom'></div>
-        </main>
+        <>
+            
+            <main id="cards">
+                {stateCards.map((img, index) => (
+                    <Card key={index} name={`src/assets/img/${img.name}`} flipped={img.flipped} id={img.id} handleClick={handleClick} />
+                ))}
+                <div id='light' className='topo'></div>
+                <div id='light' className='bottom'></div>
+            </main>
+        </>
     )
 
 }
