@@ -7,7 +7,6 @@ const Container = () => {
         <section id="container">
             <Header/>
             <Main/>
-            <div id='light'></div>
         </section>
     )
 }

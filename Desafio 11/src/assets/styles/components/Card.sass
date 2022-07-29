@@ -2,12 +2,24 @@
 @use '../mixins'
 
 .card
+    z-index: 1
+    cursor: pointer
+
+.card_content
     @include mixins.card
     border-radius: variables.$border-radius-principal
+    position: relative
+    transform-style: preserve-3d
+    transition: transform 600ms ease-in-out
 
-    .close
+    .card-face
+        @include mixins.center
+        position: absolute
         width: 100%
         height: 100%
+        backface-visibility: hidden
+
+    .card-front
         font-family: variables.$font-principal
         font-weight: 400
         font-size: 72px
@@ -15,3 +27,11 @@
         background: variables.$color-red
         border: 2px solid variables.$color-orange
         border-radius: variables.$border-radius-principal
+        color: variables.$color-yellow2
+        text-shadow: variables.$shadow-text
+
+    .card-back
+        transform: rotateY(180deg)
+
+.card_content--flipped
+    transform: rotateY(180deg)

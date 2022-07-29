@@ -1,14 +1,23 @@
 import '../styles/components/Card.sass';
 
-const Card = ({ id, name, state }) => {
+const Card = ({ id, name, flipped = false, handleClick}) => {
+    const classNamesContentInCard = ['card_content'];
+    flipped && classNamesContentInCard.push('card_content--flipped');
+
+    const handleClickFn = (id) => {
+        if (handleClick) {
+            handleClick(id);
+        }
+    };
 
     return (
-        <div className='card'>
-            <div className={state}>
-                <img src={name} alt="" />
+        <div className='card' onClick={() => handleClickFn(id)}>
+            <div className={classNamesContentInCard.join(' ')}>
+                <div className='card-face card-front'>?</div>
+                <div className='card-face card-back'><img src={name} alt="" /></div>
             </div>
         </div>
-    )
+    );
 }
 
 export default Card;
