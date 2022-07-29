@@ -1,0 +1,48 @@
+@use '../../styles/variables'
+@use '../../styles/mixins'
+
+#card
+    @include mixins.flex
+    flex-direction: column
+    align-items: center
+    width: 275px
+    height: 256px
+    border-radius: variables.$first-radius
+    background: variables.$color-white2
+    position: relative
+    margin-top: 88px
+
+    img
+        position: absolute
+        top: -60px
+        width: 120px
+        height: 120px
+        background: red
+    
+    h2
+        line-height: 22.86px
+        font-size: variables.$font-size-subtitle
+        font-weight: variables.$weight-font
+        color: variables.$color-text
+        margin-top: 76px
+    
+    .description
+        width: 180px
+        margin-top: 8px
+        line-height: 20px
+        font-size: variables.$font-size-description
+        font-weight: variables.$weight-font2
+        text-align: center
+    
+    h1
+        margin-top: 28px
+        font-weight: variables.$weight-font
+        font-size: variables.$font-size-title2
+        line-height: 40px
+        color: variables.$color-text
+    
+    button
+        position: absolute
+        bottom: -15px
+        padding: 8px 32px
+        font-size: variables.$font-size-button

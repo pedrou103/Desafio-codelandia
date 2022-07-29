@@ -1,0 +1,19 @@
+@use './variables'
+
+@mixin button
+    width: auto
+    font-weight: variables.$weight-font
+    background-color: variables.$color-yellow
+    color: variables.$color-text
+    line-height: 15px
+    border: none
+    border-radius: variables.$first-radius
+
+@mixin flex
+    display: flex
+
+@mixin center
+    @include flex
+    align-items: center
+    justify-content: center
+    

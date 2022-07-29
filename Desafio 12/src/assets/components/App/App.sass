@@ -1,0 +1,39 @@
+@use '../../styles/variables'
+@use '../../styles/mixins'
+
+header
+    @include mixins.center
+    width: 100%
+    height: 500px
+    background: url('../../img/background.png') no-repeat
+    background-position: center
+    background-size: cover
+    font-weight: variables.$weight-font
+    font-size: variables.$font-size-cover
+
+    h1
+        line-height: 121px
+        color: variables.$color-white
+
+        span:nth-child(1)
+            color: variables.$color-yellow
+        
+        span:nth-child(2)
+            color: variables.$color-red
+        
+        span:nth-child(3)
+            color: variables.$color-green
+
+footer
+    @include mixins.center
+    height: 50px
+    background: variables.$color-white
+    position: sticky
+
+    p
+        font-size: variables.$font-size-description
+        text-transform: uppercase
+        color: variables.$color-text
+        line-height: 18px
+        font-weight: variables.$weight-font2
+        
