@@ -52,8 +52,8 @@ const Main = () => {
     const unflip = useRef(false);
     const [mathes, setMatches] = useState(0);
 
-    const handleClick = (id) => {
-        const newStateCards = stateCards.map(card => {
+    const handleClick =  async (id) => {
+        const newStateCards =  stateCards.map(card => {
             //Se o id do card não for o id clicado não acontece nada
             if (card.id !== id) return card;
             //Se o card já estiver visivel, não faz nada
@@ -75,6 +75,7 @@ const Main = () => {
                 first.current = card
             } else if (second.current == null) {
                 second.current = card;
+                alert('segunda carta quitada')
             }
 
             if (first.current && second.current) {
@@ -90,18 +91,20 @@ const Main = () => {
                 }
             }
 
+            // if (mathes >= images.length) {
+            //     console.log(unflip.current)
+            //     if (first.current == null && second.current == null && unflip.current == false) {
+            //         alert("game concluido")
+            //     }
+            // }
+
             return card;
         });
 
         setstateCards(newStateCards);
+
     };
 
-    if (mathes >= images.length) {
-        console.log(unflip.current)
-        if (first.current == null && second.current == null && unflip.current == false) {
-            alert("game concluido")
-        }
-    }
 
     return (
         <>

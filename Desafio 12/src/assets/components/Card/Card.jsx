@@ -1,14 +1,14 @@
 import { Button } from '../Button/Button'
 import './Card.sass'
 
-function Card() {
+function Card({imageName, title, description, price, textButton}) {
     return (
         <div id="card">
-            <img src="" alt="" />
-            <h2>La Cuma</h2>
-            <p className='description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <h1>R$ 23</h1>
-            <Button texto='Comprar agora' />
+            <img src={imageName} alt="" />
+            <h2>{title}</h2>
+            <p className='description'>{description}</p>
+            <h1>{price}</h1>
+            <Button texto={textButton} />
         </div>
     )
 }
