@@ -52,12 +52,15 @@ const Main = () => {
     const unflip = useRef(false);
     const [mathes, setMatches] = useState(0);
 
-    const handleClick =  async (id) => {
-        const newStateCards =  stateCards.map(card => {
+    const handleClick = (id) => {
+        const newStateCards = stateCards.map(card => {
             //Se o id do card não for o id clicado não acontece nada
             if (card.id !== id) return card;
             //Se o card já estiver visivel, não faz nada
             if (card.flipped) return card;
+
+            //virar o card
+            card.flipped = true;
 
             if (unflip.current && first.current && second.current) {
                 first.current.flipped = false;
@@ -67,15 +70,12 @@ const Main = () => {
                 unflip.current = false;
             }
 
-            //virar o card
-            card.flipped = true;
-
-            // Configura 1 e 2 clicados
             if (first.current == null) {
                 first.current = card
+                console.log(first.current)
             } else if (second.current == null) {
-                second.current = card;
-                alert('segunda carta quitada')
+                second.current = card
+                console.log(second.current)
             }
 
             if (first.current && second.current) {
@@ -91,13 +91,6 @@ const Main = () => {
                 }
             }
 
-            // if (mathes >= images.length) {
-            //     console.log(unflip.current)
-            //     if (first.current == null && second.current == null && unflip.current == false) {
-            //         alert("game concluido")
-            //     }
-            // }
-
             return card;
         });
 
@@ -107,16 +100,13 @@ const Main = () => {
 
 
     return (
-        <>
-            
-            <main id="cards">
-                {stateCards.map((img, index) => (
-                    <Card key={index} name={`src/assets/img/${img.name}`} flipped={img.flipped} id={img.id} handleClick={handleClick} />
-                ))}
-                <div id='light' className='topo'></div>
-                <div id='light' className='bottom'></div>
-            </main>
-        </>
+        <main id="cards">
+            {stateCards.map((img, index) => (
+                <Card key={index} name={`src/assets/img/${img.name}`} flipped={img.flipped} id={img.id} handleClick={handleClick} />
+            ))}
+            <div id='light' className='topo'></div>
+            <div id='light' className='bottom'></div>
+        </main>
     )
 
 }

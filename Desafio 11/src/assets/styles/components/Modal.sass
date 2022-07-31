@@ -1,0 +1,59 @@
+@use '../variables'
+@use '../mixins'
+
+#modal
+    position: absolute
+    z-index: 1
+    width: 100vw
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #15181f88
+
+    #modal-content
+        @include mixins.flex
+        align-items: center
+        flex-direction: column
+        position: relative
+        width: 500px
+        height: 300px
+        background-color: variables.$color-gray
+        border-radius: 16px
+
+        img
+            position: absolute
+            top: -25px
+            right: -25px
+
+        h1
+            font-family: variables.$font-principal
+            font-weight: 400
+            font-size: 48px
+            line-height: 55px
+            color: variables.$color-yellow2
+            text-shadow: variables.$shadow-text
+            margin: 24px 0px
+
+        p
+            width: 80%
+            text-align: center
+            font-family: variables.$font-secundaria
+            font-weight: 400
+            font-size: 16px
+            line-height: 26px
+            color: #ffffff
+            margin-bottom: 55px
+
+        button
+            padding: 9px 73px
+            border-radius: 8px
+            background-color: variables.$color-red
+            border: 1px solid variables.$color-yellow
+            box-shadow: variables.$shadow variables.$color-yellow
+            color: #ffffff
+            font-family: variables.$font-secundaria
+            text-transform: uppercase
+            font-weight: 600
+            font-size: 16px
+            line-height: 22px
