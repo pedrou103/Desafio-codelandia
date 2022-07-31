@@ -7,23 +7,140 @@ main
     margin: auto
     width: 100%
     height: auto
+    position: relative
+
+    #pimenta
+        position: absolute
+        left: 19px
+        top: 564px
 
     section
-        width: 90%
+        max-width: 90%
 
     #cards
         @include mixins.center
         padding-top: 141px
         padding-bottom: 193px
         flex-direction: column
+        position: relative
 
         p
             font-weight: variables.$weight-font
             font-size: variables.$font-size-title
             line-height: 45px
             color: variables.$color-text
-        
-        #content 
+
+        #content
             @include mixins.center
             flex-wrap: wrap
             gap: 32px
+        
+        #peixe
+            position: absolute
+            top: 80px
+            left: 24%
+        
+        #img_estranha
+            position: absolute
+            top: 87px
+            right: 3%
+        
+        #folha
+            position: absolute
+            z-index: -1
+            top: 325px
+            right: -6%
+
+    #about
+        @include mixins.flex
+        justify-content: center
+        background-color: variables.$color-white3
+        width: 100%
+        height: 600px
+        margin: 0 auto
+
+        #container
+            @include mixins.center
+            flex-direction: row
+            padding-top: 50px
+            padding-bottom: 49px
+            width: 80%
+            position: relative
+
+            #image
+                position: relative
+                width: 100%
+                height: 100%
+
+                img
+                    position: absolute
+                    border-radius: 6px
+                    height: 100%
+
+                #circle1
+                    position: absolute
+                    width: 141px
+                    height: 141px
+                    background: variables.$color-white
+                    z-index: 1
+                    box-shadow: 0px 3.04px 3.04px rgba(159, 62, 62, 0.25)
+                    border-radius: 100%
+                    left: -70.5px
+                    top: 23px
+
+            #txt
+                @include mixins.center
+                align-items: start
+                flex-direction: column
+                width: 100%
+                height: 100%
+                color: variables.$color-text
+
+                h1
+                    font-weight: variables.$weight-font
+                    font-size: variables.$font-size-title
+                    line-height: 45px
+
+                    span:nth-child(1)
+                        color: variables.$color-yellow
+
+                    span:nth-child(2)
+                        color: variables.$color-red
+
+                    span:nth-child(3)
+                        color: variables.$color-green
+
+                p
+                    width: 75%
+                    margin: 24px 0px
+                    font-weight: variables.$weight-font2
+                    font-size: variables.$font-size-subtitle2
+                    line-height: 26px
+
+                button
+                    padding: 12px 40px
+                    font-weight: variables.$weight-font
+                    font-size: variables.$font-size-subtitle2
+                    line-height: 15px
+
+            #tomate
+                position: absolute
+                top: -63px
+                right: 0
+
+            #circle2
+                @include mixins.center
+                position: absolute
+                background: variables.$color-white
+                width: 128px
+                height: 128px
+                border-radius: 100%
+                box-shadow: inset -23px -23px 43px #FFFDF1
+                filter: drop-shadow(0px 4px 50px rgba(159, 62, 62, 0.23))
+                right: 0
+                bottom: 93px
+
+                img
+                    position: absolute
+                    top: -23px
+                    right: -17px

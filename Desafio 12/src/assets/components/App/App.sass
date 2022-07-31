@@ -10,6 +10,7 @@ header
     background-size: cover
     font-weight: variables.$weight-font
     font-size: variables.$font-size-cover
+    position: relative
 
     h1
         line-height: 121px
@@ -23,6 +24,11 @@ header
         
         span:nth-child(3)
             color: variables.$color-green
+    
+    img
+        position: absolute
+        left: 0
+        bottom: -108px
 
 footer
     @include mixins.center
@@ -36,4 +42,3 @@ footer
         color: variables.$color-text
         line-height: 18px
         font-weight: variables.$weight-font2
-        
