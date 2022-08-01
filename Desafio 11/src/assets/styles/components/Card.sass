@@ -33,5 +33,10 @@
     .card-back
         transform: rotateY(180deg)
 
+        img
+            @media screen and (max-width: 500px)
+                max-width: 90px
+                max-height: 90px
+
 .card_content--flipped
     transform: rotateY(180deg)

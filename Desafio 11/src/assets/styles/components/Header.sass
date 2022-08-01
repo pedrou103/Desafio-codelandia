@@ -8,6 +8,9 @@ header
     width: 80%
     padding: 100px 0
 
+    @media screen and (max-width: 500px)
+        padding: 56px 0
+
     h1
         font-weight: 400
         font-size: 72px
@@ -17,13 +20,24 @@ header
         text-shadow: variables.$shadow-text
         padding-bottom: 40px
         font-family: variables.$font-principal
-    
+
+        @media screen and (max-width: 500px)
+            font-size: 32px
+            line-height: 37px
+
     select
         width: 285px
         height: auto
         background: variables.$color-red
         padding: 13px 0 13px 20px
         color: variables.$color-yellow
-        border:1px solid variables.$color-yellow
+        border: 1px solid variables.$color-yellow
         border-radius: variables.$border-radius-secondary
         font-family: variables.$font-secundaria
+        font-size: 16px
+        line-height: 22px
+        font-weight: 400
+
+        @media screen and (max-width: 500px)
+            width: 243px
+            padding: 9px 0 9px 12px

@@ -42,6 +42,12 @@ const general = (images) => {
     return sortArray(regenerateCard(duplicateTheArray(images)));
 };
 
+function cortar() {
+    var ok = 3
+    const arr = images.slice(0, ok)
+    console.log(arr)
+}
+
 const Main = () => {
     const [stateCards, setstateCards] = useState(() => {
         return general(images)
@@ -69,44 +75,69 @@ const Main = () => {
             //virar o card
             card.flipped = true;
 
-            if (unflip.current && first.current && second.current) {
-                first.current.flipped = false;
-                second.current.flipped = false;
-                first.current = null;
-                second.current = null;
-                unflip.current = false;
-            }
+            // if (unflip.current && first.current && second.current) {
+            //     first.current.flipped = false;
+            //     second.current.flipped = false;
+            //     first.current = null;
+            //     second.current = null;
+            //     unflip.current = false;
+            // }
 
             if (first.current == null) {
                 first.current = card
-            } else if (second.current == null) {
+                console.log(first)
+            } else if (first.current !== null && second.current == null) {
                 second.current = card
+                console.log(second)
             }
 
             if (first.current && second.current) {
                 if (first.current.name === second.current.name) {
-                    //estado de acerto
+                    console.log(` `)
+
                     first.current = null;
                     second.current = null;
 
                     setMatches((m) => m + 1);
                 } else {
-                    //estado de erro
-                    unflip.current = true
+                    setTimeout(() => {
+                        first.current.flipped = false
+                        alert('aaaaaa')
+                    }, 1000)
                 }
             }
+
+            // if (first.current == null) {
+            //     first.current = card
+            // } else if (second.current == null) {
+            //     second.current = card
+            // }
+
+            // if (first.current && second.current) {
+            //     if (first.current.name === second.current.name) {
+            //         //estado de acerto
+            //         first.current = null;
+            //         second.current = null;
+
+            //         setMatches((m) => m + 1);
+            //     } else {
+            //         //estado de erro
+            //         unflip.current = true
+            //     }
+            // }
 
             if (mathes >= images.length) {
                 console.log(unflip.current)
                 if (first.current == null && second.current == null) {
                     document.getElementById('modal').style.visibility = "visible";
-                    document.getElementById('close').addEventListener("click", function() {
+                    document.getElementById('close').addEventListener("click", function () {
                         document.getElementById('modal').style.visibility = "hidden";
                     });
-                    document.querySelector('button').addEventListener("click", function() {
+                    document.querySelector('button').addEventListener("click", function () {
                         unflip.current = false;
                         document.getElementById('modal').style.visibility = "hidden";
                         Reset();
+                        cortar();
                     });
                 }
             }
@@ -117,7 +148,6 @@ const Main = () => {
         setstateCards(newStateCards);
 
     };
-
 
     return (
         <main id="cards">
