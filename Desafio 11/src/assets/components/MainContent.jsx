@@ -50,7 +50,14 @@ const Main = () => {
     const first = useRef(null);
     const second = useRef(null);
     const unflip = useRef(false);
-    const [mathes, setMatches] = useState(0);
+    const [mathes, setMatches] = useState(1);
+
+    const Reset = () => {
+        first.current = null;
+        second.current = null;
+        setMatches(0);
+        setstateCards(general(images));
+    };
 
     const handleClick = (id) => {
         const newStateCards = stateCards.map(card => {
@@ -72,10 +79,8 @@ const Main = () => {
 
             if (first.current == null) {
                 first.current = card
-                console.log(first.current)
             } else if (second.current == null) {
                 second.current = card
-                console.log(second.current)
             }
 
             if (first.current && second.current) {
@@ -88,6 +93,21 @@ const Main = () => {
                 } else {
                     //estado de erro
                     unflip.current = true
+                }
+            }
+
+            if (mathes >= images.length) {
+                console.log(unflip.current)
+                if (first.current == null && second.current == null) {
+                    document.getElementById('modal').style.visibility = "visible";
+                    document.getElementById('close').addEventListener("click", function() {
+                        document.getElementById('modal').style.visibility = "hidden";
+                    });
+                    document.querySelector('button').addEventListener("click", function() {
+                        unflip.current = false;
+                        document.getElementById('modal').style.visibility = "hidden";
+                        Reset();
+                    });
                 }
             }
 
