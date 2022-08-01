@@ -10,6 +10,7 @@ main
     position: relative
 
     #pimenta
+        @include mixins.hidden
         position: absolute
         left: 19px
         top: 564px
@@ -34,18 +35,21 @@ main
             @include mixins.center
             flex-wrap: wrap
             gap: 32px
-        
+
         #peixe
+            @include mixins.hidden
             position: absolute
             top: 80px
             left: 24%
-        
+
         #img_estranha
+            @include mixins.hidden
             position: absolute
             top: 87px
             right: 3%
-        
+
         #folha
+            @include mixins.hidden
             position: absolute
             z-index: -1
             top: 325px
@@ -67,7 +71,11 @@ main
             width: 80%
             position: relative
 
+            @media screen and (max-width: 900px)
+                width: 100%
+
             #image
+                @include mixins.hidden
                 position: relative
                 width: 100%
                 height: 100%
@@ -96,10 +104,17 @@ main
                 height: 100%
                 color: variables.$color-text
 
+                @media screen and (max-width: 900px)
+                    align-items: center
+
                 h1
                     font-weight: variables.$weight-font
                     font-size: variables.$font-size-title
                     line-height: 45px
+
+                    @media screen and (max-width: 900px)
+                        font-size: 22px
+                        line-height: 28px
 
                     span:nth-child(1)
                         color: variables.$color-yellow
@@ -117,19 +132,30 @@ main
                     font-size: variables.$font-size-subtitle2
                     line-height: 26px
 
+                    @media screen and (max-width: 900px)
+                        width: 100%
+                        text-align: center
+                        font-size: variables.$font-size-description
+                        line-height: 19px
+
                 button
                     padding: 12px 40px
                     font-weight: variables.$weight-font
                     font-size: variables.$font-size-subtitle2
                     line-height: 15px
 
+                    @media screen and (max-width: 900px)
+                        padding: 8px 20px
+
             #tomate
+                @include mixins.hidden
                 position: absolute
                 top: -63px
                 right: 0
 
             #circle2
                 @include mixins.center
+                @include mixins.hidden
                 position: absolute
                 background: variables.$color-white
                 width: 128px
