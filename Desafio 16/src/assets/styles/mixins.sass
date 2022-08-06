@@ -1,0 +1,29 @@
+@use './variables'
+
+@mixin title
+    font-weight: variables.$weight-bold
+    font-size: 48px
+    color: variables.$color-black
+
+@mixin flex
+    display: flex
+
+@mixin center
+    @include flex
+    justify-content: center
+    align-items: center
+
+@mixin container
+    max-width: 1200px
+    height: 100%
+
+    @media screen and ( max-width: 700px )
+        padding: 0 24px
+
+@mixin none
+    @media screen and ( max-width: 700px )
+        display: none
+
+@mixin block
+    @media screen and ( max-width: 700px )
+        display: block

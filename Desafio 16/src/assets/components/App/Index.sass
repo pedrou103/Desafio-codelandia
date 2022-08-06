@@ -1,0 +1,225 @@
+@use '../../styles/variables'
+@use '../../styles/mixins'
+
+header
+    @include mixins.center
+    background-color: variables.$color-pink
+    padding-top: 20px
+
+    .container
+        @include mixins.container
+        width: 100%
+
+        .header
+            @include mixins.center
+            justify-content: space-between
+            width: 100%
+
+            ul
+                @include mixins.center
+                @include mixins.none
+                gap: 51px
+
+                a
+                    font-weight: variables.$weight-regular
+                    font-size: 16px
+                    line-height: 24px
+                    color: variables.$color-black
+                    position: relative
+
+                    &:before
+                        content: ''
+                        position: absolute
+                        width: 0
+                        height: 3px
+                        bottom: 0
+                        right: 0
+                        background-color: variables.$color-red
+                        transition: all .5s ease-in-out
+
+                    &:hover:before
+                        width: 100%
+                        left: 0
+
+            #menu
+                display: none
+                @include mixins.block
+
+        .content-header
+            @include mixins.center
+            flex-direction: row
+            padding-top: 71px
+            padding-bottom: 146px
+            @media screen and ( max-width: 700px)
+                padding-top: 55px
+                padding-bottom: 43px
+
+            .texto
+                width: 100%
+
+                @media screen and ( max-width: 700px)
+                    @include mixins.center
+                    flex-direction: column
+
+                h1
+                    width: 488px
+                    font-weight: variables.$color-black
+                    font-size: 48px
+                    line-height: 52px
+                    margin-bottom: 24px
+
+                    @media screen and ( max-width: 700px)
+                        font-size: 32px
+                        line-height: 40px
+                        text-align: center
+                        margin-bottom: 16px
+
+                p
+                    width: 444px
+                    font-weight: variables.$weight-regular
+                    font-size: 16px
+                    line-height: 24px
+                    color: variables.$color-gray
+                    margin-bottom: 40px
+
+                    @media screen and ( max-width: 700px)
+                        width: 313px
+                        font-size: 14px
+                        line-height: 21px
+                        text-align: center
+                        margin-bottom: 16px
+
+            #luvas
+                @include mixins.none
+                width: 100%
+
+main
+    @include mixins.center
+
+    .container
+        @include mixins.container
+        @include mixins.flex
+        flex-direction: column
+        justify-content: center
+        width: 100%
+        text-align: center
+
+        .first
+            width: 100%
+
+            #content-to-fisrt
+                @include mixins.center
+                flex-direction: column
+                gap: 16
+
+                h1
+                    padding-top: 48px
+                    font-weight: variables.$weight-bold
+                    font-size: 48px
+                    line-height: 72px
+                    @media screen and (max-width: 700px)
+                        padding-top: 40px
+                        font-size: 24px
+                        line-height: 36px
+
+                p
+                    width: 477px
+                    font-weight: variables.$weight-light
+                    font-size: 16px
+                    line-height: 24px
+                    color: variables.$color-gray
+                    @media screen and (max-width: 700px)
+                        width: 320px
+                        font-size: 14px
+                        line-height: 21px
+
+            #cards
+                @include  mixins.flex
+                flex-direction: row
+                justify-content: space-between
+                padding-top: 32px
+                padding-bottom: 82px
+                flex-wrap: wrap
+
+                @media screen and (max-width: 700px)
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+
+.second
+    background-color: variables.$color-pink
+
+    .container
+        text-align: left
+
+        .content-main
+            @include mixins.center
+            flex-direction: row-reverse
+            gap: 224px
+
+            .texto
+                padding-top: 90px
+                padding-bottom: 91px
+                width: 100%
+                @media screen and ( max-width: 700px)
+                    @include mixins.center
+                    flex-direction: column
+                    padding-top: 40px
+                    padding-bottom: 31px
+
+                h1
+                    width: 488px
+                    font-weight: variables.$color-black
+                    font-size: 48px
+                    line-height: 52px
+                    margin-bottom: 24px
+                    @media screen and ( max-width: 700px)
+                        font-size: 32px
+                        line-height: 40px
+                        text-align: center
+                        margin-bottom: 16px
+
+                p
+                    width: 457px
+                    font-weight: variables.$weight-regular
+                    font-size: 16px
+                    line-height: 24px
+                    color: variables.$color-gray
+                    margin-bottom: 32px
+                    @media screen and ( max-width: 700px)
+                        margin-bottom: 40px
+                        width: 313px
+                        font-size: 14px
+                        line-height: 21px
+                        text-align: center
+                        margin-bottom: 16px
+
+            #shared
+                @include mixins.none
+                width: 400px
+                height: auto
+
+footer
+    @include mixins.center
+
+    .container
+        @include mixins.container
+        @include mixins.center
+        width: 100%
+        justify-content: space-between
+        padding-top: 55px
+        padding-bottom: 45px
+        @media screen and ( max-width: 700px)
+            justify-content: center
+
+        .logo
+            @media screen and ( max-width: 700px )
+                @include mixins.none
+
+        #circles
+            @include mixins.flex
+            flex-direction: row
+            gap: 42px
+
+            @media screen and ( max-width: 700px )
+                padding: 15px 0

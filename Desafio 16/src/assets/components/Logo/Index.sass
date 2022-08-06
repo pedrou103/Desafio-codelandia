@@ -1,0 +1,16 @@
+@use '../../styles/variables'
+@use '../../styles/mixins'
+
+.logo
+    @include mixins.center
+    gap: 12px
+
+    span
+        font-size: 24px
+        line-height: 36px
+        font-weight: variables.$weight-regular
+        color: variables.$color-black
+
+        @media screen and ( max-width: 700px)
+            font-size: 14px
+            line-height: 21px

@@ -1,0 +1,13 @@
+@use '../../styles/variables'
+@use '../../styles/mixins'
+
+.circle
+    @include mixins.center
+    width: 40px
+    height: 40px
+    border-radius: 20px
+    background-color: #da253428
+
+    @media screen and ( max-width: 700px )
+        width: 30px
+        height: 30px

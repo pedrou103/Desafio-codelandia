@@ -1,0 +1,27 @@
+@use '../../styles/variables'
+@use '../../styles/mixins'
+
+#card
+    @include mixins.flex
+    flex-direction: column
+    width: 200px
+    height: 333px
+    text-align: center
+
+    img
+        width: 100%
+        height: auto
+
+    h3
+        margin-top: 17px
+        margin-bottom: 12px
+        font-size: 20px
+        line-height: 30px
+        font-weight: variables.$weight-regular
+        color: variables.$color-black
+
+    span
+        font-weight: variables.$weight-regular
+        font-size: 16px
+        line-height: 24px
+        color: variables.$color-gray-light
