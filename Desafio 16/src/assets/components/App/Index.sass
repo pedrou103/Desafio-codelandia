@@ -5,6 +5,7 @@ header
     @include mixins.center
     background-color: variables.$color-pink
     padding-top: 20px
+    position: relative
 
     .container
         @include mixins.container
@@ -17,8 +18,17 @@ header
 
             ul
                 @include mixins.center
-                @include mixins.none
                 gap: 51px
+                @media screen and ( max-width: 700px )
+                    @include mixins.center
+                    position: fixed
+                    right: -100%
+                    top: 0
+                    flex-direction: column
+                    width: 50%
+                    height: 100vh
+                    backdrop-filter: blur(10px)
+                    background: rgba(255, 255, 255, .3)
 
                 a
                     font-weight: variables.$weight-regular
@@ -26,6 +36,10 @@ header
                     line-height: 24px
                     color: variables.$color-black
                     position: relative
+
+                    @media screen and ( max-width: 700px )
+                        font-size: 24px
+                        line-height: 28px
 
                     &:before
                         content: ''
@@ -41,9 +55,14 @@ header
                         width: 100%
                         left: 0
 
+            .open
+                @media screen and ( max-width: 700px )
+                    right: 0    
+
             #menu
                 display: none
                 @include mixins.block
+                z-index: 1
 
         .content-header
             @include mixins.center
@@ -62,7 +81,7 @@ header
                     flex-direction: column
 
                 h1
-                    width: 488px
+                    max-width: 488px
                     font-weight: variables.$color-black
                     font-size: 48px
                     line-height: 52px
@@ -75,7 +94,7 @@ header
                         margin-bottom: 16px
 
                 p
-                    width: 444px
+                    max-width: 444px
                     font-weight: variables.$weight-regular
                     font-size: 16px
                     line-height: 24px
@@ -123,7 +142,7 @@ main
                         line-height: 36px
 
                 p
-                    width: 477px
+                    max-width: 477px
                     font-weight: variables.$weight-light
                     font-size: 16px
                     line-height: 24px
@@ -168,7 +187,7 @@ main
                     padding-bottom: 31px
 
                 h1
-                    width: 488px
+                    max-width: 488px
                     font-weight: variables.$color-black
                     font-size: 48px
                     line-height: 52px
@@ -180,7 +199,7 @@ main
                         margin-bottom: 16px
 
                 p
-                    width: 457px
+                    max-width: 457px
                     font-weight: variables.$weight-regular
                     font-size: 16px
                     line-height: 24px
