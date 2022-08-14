@@ -50,7 +50,7 @@ const sociais = [
 ];
 
 const acao = () => {
-  alert('chamou')
+  document.querySelector('ul').classList.toggle('open');
 }
 
 function App() {
@@ -59,17 +59,17 @@ function App() {
     <div className="App">
       <header>
         <div className="container">
-          <div className="header">
+          <div className="header" id='inicio'>
             <Logo />
             <nav>
               <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Acessórios</a></li>
-                <li><a href="#">Doação</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#acessorios">Acessórios</a></li>
+                <li><a href="#doacao">Doação</a></li>
+                <li><a href="#contatos">Contato</a></li>
               </ul>
-              <img id="menu" onClick={acao} src="src/assets/img/hamburguer.png" alt="menu hamburguer" />
             </nav>
+            <img id="menu" onClick={acao} src="src/assets/img/hamburguer.png" alt="menu hamburguer" />
           </div>
           <div className="content-header">
             <Doacao
@@ -83,7 +83,7 @@ function App() {
       </header>
       <main>
         <section className="container">
-          <section className='first'>
+          <section className='first' id='acessorios'>
             <div id='content-to-fisrt'>
               <h1>Acessórios</h1>
               <p>Nessas festas de fim de ano mande um presente para a pessoa amada e compartilhe a alegria do Natal.</p>
@@ -100,7 +100,7 @@ function App() {
           </section>
         </section>
       </main>
-      <main className='second'>
+      <main className='second' id='doacao'>
         <section className='container'>
           <div className="content-main">
             <Doacao
@@ -112,12 +112,12 @@ function App() {
           </div>
         </section>
       </main>
-      <footer>
+      <footer id='contatos'>
         <div className="container">
           <Logo />
           <div id='circles'>
             {sociais.map((rede, index) => (
-              <Circle key={index} url={rede.url}/>
+              <Circle key={index} url={rede.url} />
             ))}
           </div>
         </div>
