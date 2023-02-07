@@ -4,15 +4,15 @@ import '../styles/components/Main.sass'
 import { useRef, useState } from "react";
 
 const images = [
-    { id: 1, name: '01.png', flipped: false },
-    { id: 2, name: '02.png', flipped: false },
-    { id: 3, name: '03.png', flipped: false },
-    { id: 4, name: '04.png', flipped: false },
-    { id: 5, name: '05.png', flipped: false },
-    { id: 6, name: '06.png', flipped: false },
-    { id: 7, name: '07.png', flipped: false },
-    { id: 8, name: '08.png', flipped: false },
-    { id: 9, name: '09.png', flipped: false },
+    { id: 1, name: 'src/assets/img/01.png', flipped: false },
+    { id: 2, name: 'src/assets/img/02.png', flipped: false },
+    { id: 3, name: 'src/assets/img/03.png', flipped: false },
+    { id: 4, name: 'src/assets/img/04.png', flipped: false },
+    { id: 5, name: 'src/assets/img/05.png', flipped: false },
+    { id: 6, name: 'src/assets/img/06.png', flipped: false },
+    { id: 7, name: 'src/assets/img/07.png', flipped: false },
+    { id: 8, name: 'src/assets/img/08.png', flipped: false },
+    { id: 9, name: 'src/assets/img/09.png', flipped: false },
 ];
 
 const KeyGen = () => {
@@ -110,7 +110,7 @@ const Main = () => {
     return (
         <main id="cards">
             {stateCards.map((img, index) => (
-                <Card key={index} name={`../img/${img.name}`} flipped={img.flipped} id={img.id} handleClick={handleClick} />
+                <Card key={index} name={`${img.name}`} flipped={img.flipped} id={img.id} handleClick={handleClick} />
             ))}
             <div id='light' className='topo'></div>
             <div id='light' className='bottom'></div>
