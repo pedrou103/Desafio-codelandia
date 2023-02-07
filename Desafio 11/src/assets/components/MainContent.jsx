@@ -110,7 +110,7 @@ const Main = () => {
     return (
         <main id="cards">
             {stateCards.map((img, index) => (
-                <Card key={index} name={`src/assets/img/${img.name}`} flipped={img.flipped} id={img.id} handleClick={handleClick} />
+                <Card key={index} name={`../img/${img.name}`} flipped={img.flipped} id={img.id} handleClick={handleClick} />
             ))}
             <div id='light' className='topo'></div>
             <div id='light' className='bottom'></div>
