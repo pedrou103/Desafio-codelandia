@@ -1,13 +1,21 @@
 import Card from '../Card/Card'
 import './MainContent.sass'
 
+import pizza1 from '../../img/img1.png'
+import tomate from '../../img/img2.png'
+import pizza2 from '../../img/img3.png'
+import pimenta from '../../img/img5.png'
+import peixe from '../../img/img6.png'
+import img_estranha from '../../img/img7.png'
+import folha from '../../img/img8.png'
+
 import restaurant from '../../img/restaurant.png'
 import { Button } from '../Button/Button';
 
 const infoCards = [
     {
         id: 1,
-        imageName: 'image 16.png',
+        imageName: 'image16.png',
         title: 'La Cuma',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
         price: 'R$ 23',
@@ -15,7 +23,7 @@ const infoCards = [
     },
     {
         id: 2,
-        imageName: 'image 17.png',
+        imageName: 'image17.png',
         title: 'La Menta',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
         price: 'R$ 23',
@@ -23,7 +31,7 @@ const infoCards = [
     },
     {
         id: 3,
-        imageName: 'image 18.png',
+        imageName: 'image18.png',
         title: 'La Bana',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
         price: 'R$ 23',
@@ -31,7 +39,7 @@ const infoCards = [
     },
     {
         id: 4,
-        imageName: 'image 19.png',
+        imageName: 'image19.png',
         title: 'La Toca',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
         price: 'R$ 23',
@@ -43,30 +51,30 @@ function MainContent() {
 
     return (
         <main>
-            <img id='pimenta' src="src/assets/img/img5.png" alt="imagem de pimenta" />
+            <img id='pimenta' src={pimenta} alt="imagem de pimenta" />
             <section id="cards">
                 <p>Mais vendidas</p>
                 <div id="content">
                     {infoCards.map((card) => (
                         <Card
                             key={card.id}
-                            imageName={`src/assets/img/${card.imageName}`}
+                            imageName={`../../img/${card.imageName}`}
                             title={card.title}
                             description={card.description}
                             price={card.price}
                             textButton={card.buttonText} />
                     ))}
                 </div>
-                <img id='peixe' src="src/assets/img/img6.png" alt="imagem de um peixe" />
-                <img id='img_estranha' src="src/assets/img/img7.png" alt="imagem de uma coisa estranha" />
-                <img id='folha' src="src/assets/img/img8.png" alt="imagem de uma folha" />
+                <img id='peixe' src={peixe} alt="imagem de um peixe" />
+                <img id='img_estranha' src={img_estranha} alt="imagem de uma coisa estranha" />
+                <img id='folha' src={folha} alt="imagem de uma folha" />
             </section>
             <section id="about">
                 <div id="container">
                     <div id="image">
                         <img src={restaurant} alt="imagem do restaurante" />
                         <div id="circle1">
-                            <img src="src/assets/img/img1.png" alt="imagem da pizza" />
+                            <img src={pizza1} alt="imagem da pizza" />
                         </div>
                     </div>
                     <div id="txt">
@@ -74,9 +82,9 @@ function MainContent() {
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis justo sem. Donec consequat, nunc a dapibus dapibus, justo dolor tristique tortor, sit amet tincidunt lorem nisl at ex. Cras dolor purus, varius in euismod pretium, finibus nec mi. Curabitur aliquam pharetra lectus in pharetra. Nullam viverra elementum neque quis fermentum. </p>
                         <Button texto="Ler Mais"/>
                     </div>
-                    <img id='tomate' src="src/assets/img/img2.png" alt="imagem de tomate" />
+                    <img id='tomate' src={tomate} alt="imagem de tomate" />
                     <div id="circle2">
-                        <img src="src/assets/img/img3.png" alt="imagem de pizza" />
+                        <img src={pizza2} alt="imagem de pizza" />
                     </div>
                 </div>
             </section>
