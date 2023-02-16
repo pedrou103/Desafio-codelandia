@@ -1,13 +1,18 @@
 import Card from '../Card/Card'
 import './MainContent.sass'
 
+import pizza1 from '../../img/img1.png'
 import tomate from '../../img/img2.png'
 import pizza2 from '../../img/img3.png'
 import pimenta from '../../img/img5.png'
 import peixe from '../../img/img6.png'
 import img_estranha from '../../img/img7.png'
 import folha from '../../img/img8.png'
+
 import image16 from '../../img/image16.png'
+import image17 from '../../img/image17.png'
+import image18 from '../../img/image18.png'
+import image19 from '../../img/image19.png'
 
 import restaurant from '../../img/restaurant.png'
 import { Button } from '../Button/Button';
@@ -18,7 +23,7 @@ import { Button } from '../Button/Button';
 const infoCards = [
     {
         id: 1,
-        imageName: 'image16.png',
+        imageName: image16,
         title: 'La Cuma',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
         price: 'R$ 23',
@@ -26,7 +31,7 @@ const infoCards = [
     },
     {
         id: 2,
-        imageName: 'image17.png',
+        imageName: image17,
         title: 'La Menta',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
         price: 'R$ 23',
@@ -34,7 +39,7 @@ const infoCards = [
     },
     {
         id: 3,
-        imageName: 'image18.png',
+        imageName: image18,
         title: 'La Bana',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
         price: 'R$ 23',
@@ -42,7 +47,7 @@ const infoCards = [
     },
     {
         id: 4,
-        imageName: 'image19.png',
+        imageName: image19,
         title: 'La Toca',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
         price: 'R$ 23',
@@ -77,7 +82,7 @@ function MainContent() {
                     <div id="image">
                         <img src={restaurant} alt="imagem do restaurante" />
                         <div id="circle1">
-                            <img src={'/src/assets/img/img1.png'} alt="imagem da pizza" />
+                            <img src={pizza1} alt="imagem da pizza" />
                         </div>
                     </div>
                     <div id="txt">

@@ -6,7 +6,7 @@ function Card({ imageName, title, description, price, textButton }) {
 
     return (
         <div id="card">
-            <img src={'/src/assets/img/'+imageName} alt="imagem de pizza" />
+            <img src={imageName} alt="imagem de pizza" />
             <span>
                 <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd"
