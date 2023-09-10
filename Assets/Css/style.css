@@ -1,0 +1,129 @@
+*:root {
+    --bg-card: #fff;
+}
+
+body {
+    background-color: #f2f5f9;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+body>p{
+    font-size: 26px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.container {
+    width: 100%;
+    padding: 50px 14px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.card {
+    height: 300px;
+    width: 300px;
+    background-color: var(--bg-card);
+    border-radius: 14px;
+    box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 10px;
+    cursor: default;
+}
+
+.card::after {
+    z-index: -100;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #DDD9FC;
+    border-radius: 14px;
+    transform: rotate(-10deg);
+}
+
+.card .img-project {
+    height: 120px;
+}
+
+.card h2 {
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.card a {
+    display: flex;
+    gap: 8px;
+    color: #212121;
+    font-size: 14px;
+    align-items: center;
+}
+
+.card a:hover {
+    color: blue;
+}
+
+.card a svg {
+    width: 16px;
+    height: 16px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+
+    .card {
+        height: 350px;
+        width: 350px;
+        padding: 22px;
+    }
+
+    .card .img-project {
+        height: 150px;
+    }
+    
+    .card h2 {
+        font-size: 22px;
+    }
+    
+    .card p {
+        font-size: 16px;
+        text-align: justify;
+    }
+    
+    .card a {
+        display: flex;
+        gap: 8px;
+        color: #212121;
+        font-size: 16px;
+        align-items: center;
+    }
+    
+    .card a:hover {
+        color: blue;
+    }
+    
+    .card a img {
+        width: 24px;
+        height: 24px;
+    }
+
+}
