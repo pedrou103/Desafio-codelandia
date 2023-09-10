@@ -71,6 +71,12 @@ const projects = [
         titleProject: 'La Pizza - Codelândia',
         textProject: 'Esse é o 12º desafio da codelândia e ele consiste na criação de uma página de uma pizzaria.',
     },
+    {
+        link: 'https://desafio-codelandia-9ik1.vercel.app/',
+        linkImage: './Assets/Images/d16.png',
+        titleProject: 'Feliz Natal - Codelândia',
+        textProject: 'Esse é o 16º desafio da codelândia e ele consiste na criação de uma página para comemorar o natal.',
+    },
 ];
 
 function createProjects() {
