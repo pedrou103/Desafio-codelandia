@@ -59,6 +59,18 @@ const projects = [
         titleProject: 'Naped - Codelândia',
         textProject: 'Esse é o 10º desafio da codelândia e ele consiste na criação da página inicial de notícias do mundo nerd.',
     },
+    {
+        link: 'https://desafio-codelandia-ten.vercel.app/',
+        linkImage: './Assets/Images/d11.png',
+        titleProject: 'Memo - Codelândia',
+        textProject: 'Esse é o 11º desafio da codelândia e ele consiste na criação de um jogo da memória.',
+    },
+    {
+        link: 'https://desafio12-react.vercel.app/',
+        linkImage: './Assets/Images/d12.png',
+        titleProject: 'La Pizza - Codelândia',
+        textProject: 'Esse é o 12º desafio da codelândia e ele consiste na criação de uma página de uma pizzaria.',
+    },
 ];
 
 function createProjects() {

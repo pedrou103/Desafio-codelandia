@@ -1,18 +1,27 @@
 import Card from "./Card"
+import img01 from '../../assets/img/01.png'
+import img02 from '../../assets/img/02.png'
+import img03 from '../../assets/img/03.png'
+import img04 from '../../assets/img/04.png'
+import img05 from '../../assets/img/05.png'
+import img06 from '../../assets/img/06.png'
+import img07 from '../../assets/img/07.png'
+import img08 from '../../assets/img/08.png'
+import img09 from '../../assets/img/09.png'
 
 import '../styles/components/Main.sass'
 import { useRef, useState } from "react";
 
 const images = [
-    { id: 1, name: 'src/assets/img/01.png', flipped: false },
-    { id: 2, name: 'src/assets/img/02.png', flipped: false },
-    { id: 3, name: 'src/assets/img/03.png', flipped: false },
-    { id: 4, name: 'src/assets/img/04.png', flipped: false },
-    { id: 5, name: 'src/assets/img/05.png', flipped: false },
-    { id: 6, name: 'src/assets/img/06.png', flipped: false },
-    { id: 7, name: 'src/assets/img/07.png', flipped: false },
-    { id: 8, name: 'src/assets/img/08.png', flipped: false },
-    { id: 9, name: 'src/assets/img/09.png', flipped: false },
+    { id: 1, name: img01, flipped: false },
+    { id: 2, name: img02, flipped: false },
+    { id: 3, name: img03, flipped: false },
+    { id: 4, name: img04, flipped: false },
+    { id: 5, name: img05, flipped: false },
+    { id: 6, name: img06, flipped: false },
+    { id: 7, name: img07, flipped: false },
+    { id: 8, name: img08, flipped: false },
+    { id: 9, name: img09, flipped: false },
 ];
 
 const KeyGen = () => {
